@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ניהול האתר - מערכת חכמה</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap');
+        body { font-family: 'Heebo', sans-serif; background-color: #0f172a; color: white;}
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- מסך התחברות לניהול -->
+    <div id="login-screen" class="bg-slate-800 p-8 rounded-3xl shadow-2xl border border-slate-700 w-full max-w-md text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-indigo-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+        <h2 class="text-2xl font-bold mb-6">פאנל ניהול אתר</h2>
+        
+        <div class="mb-6 text-right relative">
+            <label class="block text-slate-400 text-xs mb-1 font-bold">מפתח GitHub Token:</label>
+            <input type="password" id="github-token" class="w-full bg-slate-900 border border-slate-600 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500" placeholder="ghp_xxxxxxxxxxxx" dir="ltr">
+            <p class="text-[10px] text-slate-500 mt-1">המפתח נשמר בדפדפן שלך בלבד ומשמש כסיסמה למערכת.</p>
+        </div>
+
+        <button id="login-btn" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 rounded-xl transition shadow-lg">התחבר למערכת</button>
+        <p id="error-msg" class="text-red-400 text-sm mt-4 hidden font-bold"></p>
+    </div>
+
+    <!-- מסך הניהול ולוח הבקרה -->
+    <div id="admin-dashboard" class="hidden bg-slate-800 p-8 md:p-10 rounded-[2rem] shadow-2xl border border-slate-700 w-full max-w-2xl relative">
+        <!-- מסך טעינה שמכסה הכל כשיש שמירה -->
+        <div id="loading-overlay" class="hidden absolute inset-0 bg-slate-800/80 backdrop-blur-sm z-50 flex flex-col items-center justify-center rounded-[2rem]">
+            <div class="animate-spin rounded-full h-12 w-12 border-4 border-slate-600 border-t-indigo-500 mb-4"></div>
+            <p class="font-bold text-indigo-200">מתקשר עם שרתי גיטהאב...</p>
+        </div>
+
+        <div class="flex justify-between items-center mb-8 border-b border-slate-700 pb-4">
+            <h1 class="text-3xl font-black text-indigo-400">לוח בקרה מרכזי</h1>
+            <a href="index.html" class="text-sm bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded-lg transition">חזרה לאתר</a>
+        </div>
+
+        <!-- ניהול הודעות -->
+        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 mb-6">
+            <h3 class="text-xl font-bold mb-2 flex items-center gap-2 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                הודעת מנהלים (באנר)
+            </h3>
+            <p class="text-slate-400 text-sm mb-4">הטקסט יופיע קופץ בראש האתר. מחק את הטקסט כדי להסתיר את הבאנר.</p>
+            <textarea id="announcement-input" rows="3" class="w-full bg-slate-800 border border-slate-600 rounded-xl p-4 text-white focus:outline-none focus:border-indigo-500 resize-none"></textarea>
+        </div>
+
+        <button id="save-btn" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-8 rounded-xl transition shadow-lg flex items-center justify-center gap-2 text-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" /></svg>
+            שמור נתונים ועדכן את האתר
+        </button>
+        <div id="save-status" class="text-center mt-4 font-bold text-sm"></div>
+    </div>
+
+    <script>
+        // --- עדכון נתונים אוטומטי ---
+        const GITHUB_OWNER = "mytovmail"; 
+        const GITHUB_REPO = "Podcast-database"; 
+        // -----------------------------------------------------
+
+        const FILE_PATH = "config.json";
+        let fileSha = ""; 
+        
+        const savedToken = localStorage.getItem('github_pat');
+        if (savedToken) document.getElementById('github-token').value = savedToken;
+
+        document.getElementById('login-btn').addEventListener('click', attemptLogin);
+
+        async function attemptLogin() {
+            const token = document.getElementById('github-token').value.trim();
+
+            if (!token) {
+                showError("חובה להזין GitHub Token.");
+                return;
+            }
+
+            try {
+                document.getElementById('login-btn').innerHTML = "מתחבר...";
+                const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
+                
+                const response = await fetch(url, {
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error("שגיאה בגישה למאגר. וודא ששם המשתמש ושם המאגר נכונים.");
+                }
+
+                const data = await response.json();
+                fileSha = data.sha; 
+
+                const decodedContent = decodeURIComponent(escape(atob(data.content)));
+                const configData = JSON.parse(decodedContent);
+
+                document.getElementById('announcement-input').value = configData.announcement || "";
+
+                localStorage.setItem('github_pat', token);
+                document.getElementById('login-screen').classList.add('hidden');
+                document.getElementById('admin-dashboard').classList.remove('hidden');
+
+            } catch (err) {
+                showError(err.message);
+                document.getElementById('login-btn').innerHTML = "התחבר למערכת";
+            }
+        }
+
+        document.getElementById('save-btn').addEventListener('click', async function() {
+            const token = document.getElementById('github-token').value.trim();
+            const newConfig = {
+                announcement: document.getElementById('announcement-input').value
+            };
+
+            const overlay = document.getElementById('loading-overlay');
+            const status = document.getElementById('save-status');
+            overlay.classList.remove('hidden');
+
+            try {
+                const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
+                const jsonString = JSON.stringify(newConfig, null, 2);
+                const encodedContent = btoa(unescape(encodeURIComponent(jsonString)));
+
+                const response = await fetch(url, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: "Update config via admin panel",
+                        content: encodedContent,
+                        sha: fileSha
+                    })
+                });
+
+                if (!response.ok) throw new Error("נכשל בעדכון הקובץ בגיטהאב.");
+
+                const responseData = await response.json();
+                fileSha = responseData.content.sha;
+
+                overlay.classList.add('hidden');
+                status.textContent = "הנתונים עודכנו בהצלחה! האתר יתעדכן תוך כדקה.";
+                status.className = "text-center mt-4 font-bold text-sm text-green-400";
+                
+            } catch (err) {
+                overlay.classList.add('hidden');
+                status.textContent = "שגיאה: " + err.message;
+                status.className = "text-center mt-4 font-bold text-sm text-red-400";
+            }
+        });
+
+        function showError(msg) {
+            const errorEl = document.getElementById('error-msg');
+            errorEl.textContent = msg;
+            errorEl.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
