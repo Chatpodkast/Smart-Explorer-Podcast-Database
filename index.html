@@ -77,10 +77,16 @@
                 <span class="text-xs text-slate-400 font-bold uppercase tracking-wider mb-0.5">הושלמו</span>
                 <span class="font-black text-slate-700 text-base" id="download-progress-text">0 מתוך 0</span>
             </div>
-            <button onclick="cancelDownloads()" class="text-red-600 hover:text-red-700 font-bold text-sm bg-red-50 hover:bg-red-100 px-4 py-2 rounded-xl transition-colors border border-red-100 flex items-center gap-2 shadow-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1V8a1 1 0 00-1-1H8z" clip-rule="evenodd" /></svg>
-                עצור הכל
-            </button>
+            <div class="flex gap-2">
+                <button id="resume-dl-btn" onclick="resumeDownloads()" class="hidden text-emerald-600 hover:text-emerald-700 font-bold text-sm bg-emerald-50 hover:bg-emerald-100 px-4 py-2 rounded-xl transition-colors border border-emerald-100 flex items-center gap-2 shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" /></svg>
+                    המשך
+                </button>
+                <button id="stop-dl-btn" onclick="cancelDownloads()" class="hidden text-red-600 hover:text-red-700 font-bold text-sm bg-red-50 hover:bg-red-100 px-4 py-2 rounded-xl transition-colors border border-red-100 flex items-center gap-2 shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1V8a1 1 0 00-1-1H8z" clip-rule="evenodd" /></svg>
+                    עצור הכל
+                </button>
+            </div>
         </div>
 
         <div id="download-queue-list" class="flex-1 overflow-y-auto bg-slate-50 p-3 space-y-2 relative">
@@ -255,7 +261,7 @@
                     }
                 }
 
-                document.getElementById('splash-status').textContent = "טוען אינדקס קבצים מגיטהאב...";
+                document.getElementById('splash-status').textContent = "טוען אינדקס קבצים...";
                 const dbRes = await fetch(getResourceUrl('database.json'));
                 if (!dbRes.ok) throw new Error("מסד הנתונים לא נמצא");
                 db = await dbRes.json();
@@ -425,6 +431,24 @@
             });
             renderDownloadQueue();
             updateDownloadBadge();
+            
+            document.getElementById('stop-dl-btn').classList.add('hidden');
+            document.getElementById('resume-dl-btn').classList.remove('hidden');
+        }
+
+        function resumeDownloads() {
+            if (isDownloading) return;
+            
+            downloadQueue.forEach(item => {
+                if (item.status === 'cancelled') item.status = 'pending';
+            });
+            
+            isDownloadCancelled = false;
+            renderDownloadQueue();
+            updateDownloadBadge();
+            showToast('ממשיך את ההורדות...');
+            
+            processDownloadQueue();
         }
 
         function renderDownloadQueue() {
@@ -463,37 +487,22 @@
                 listContainer.appendChild(li);
             });
             
-            const doneCount = downloadQueue.filter(i => i.status === 'done' || i.status === 'cancelled').length;
+            const doneCount = downloadQueue.filter(i => i.status === 'done').length;
             document.getElementById('download-progress-text').innerText = `${doneCount} מתוך ${downloadQueue.length}`;
         }
 
-        // פונקציה להורדת קבצים ברצף (עם תור והשהייה)
-        async function startFolderDownload(folderId, btnElement) {
-            if (isDownloading) {
-                showToast('הורדה אחרת כבר פעילה. פותח את מנהל ההורדות...');
-                openDownloadPanel();
-                return;
-            }
-            
-            const filesToDownload = getAllFilesInFolderWithDetails(folderId);
-            if (filesToDownload.length === 0) {
-                showToast('התיקייה ריקה');
-                return;
-            }
-
-            downloadQueue = filesToDownload.map(f => ({ id: f.id, name: f.name, status: 'pending' }));
-            isDownloadCancelled = false;
+        // פונקציה לעיבוד בפועל של תור ההורדות (לשימוש גם בהתחלה וגם בהמשך הורדה)
+        async function processDownloadQueue() {
             isDownloading = true;
-            
-            openDownloadPanel();
-            updateDownloadBadge();
-            renderDownloadQueue();
-            showToast(`מתחיל בהורדת ${filesToDownload.length} קבצים...`);
+            document.getElementById('stop-dl-btn').classList.remove('hidden');
+            document.getElementById('resume-dl-btn').classList.add('hidden');
 
             for (let i = 0; i < downloadQueue.length; i++) {
                 if (isDownloadCancelled) break;
 
                 const currentItem = downloadQueue[i];
+                if (currentItem.status === 'done') continue; // דילוג על קבצים שכבר ירדו בהצלחה
+
                 currentItem.status = 'downloading';
                 renderDownloadQueue();
                 updateDownloadBadge();
@@ -527,8 +536,10 @@
                     if (document.body.contains(link)) document.body.removeChild(link);
                 }, 10000);
 
-                // השהייה של 3 שניות בין קובץ לקובץ כדי לתת למנהל ההורדות זמן לזנק
-                if (i < downloadQueue.length - 1) {
+                // בדיקה אם נשארו עוד קבצים להורדה כדי לדעת אם להשהות
+                const remaining = downloadQueue.filter(q => q.status === 'pending' || q.status === 'cancelled');
+                
+                if (remaining.length > 0) {
                     await new Promise(resolve => setTimeout(resolve, 3000)); 
                 }
 
@@ -544,9 +555,42 @@
             
             if (isDownloadCancelled) {
                 showToast('תור ההורדות נעצר.');
+                document.getElementById('stop-dl-btn').classList.add('hidden');
+                // הצגת כפתור "המשך" רק אם באמת נשארו קבצים בתור
+                const hasPending = downloadQueue.some(q => q.status === 'cancelled' || q.status === 'pending');
+                if (hasPending) {
+                    document.getElementById('resume-dl-btn').classList.remove('hidden');
+                }
             } else {
                 showToast('כל הקבצים נשלחו להורדה!');
+                document.getElementById('stop-dl-btn').classList.add('hidden');
+                document.getElementById('resume-dl-btn').classList.add('hidden');
             }
+        }
+
+        // פונקציה להתחלת הורדת תיקייה (מאתחלת את התור)
+        async function startFolderDownload(folderId, btnElement) {
+            if (isDownloading) {
+                showToast('הורדה אחרת כבר פעילה. פותח את מנהל ההורדות...');
+                openDownloadPanel();
+                return;
+            }
+            
+            const filesToDownload = getAllFilesInFolderWithDetails(folderId);
+            if (filesToDownload.length === 0) {
+                showToast('התיקייה ריקה');
+                return;
+            }
+
+            downloadQueue = filesToDownload.map(f => ({ id: f.id, name: f.name, status: 'pending' }));
+            isDownloadCancelled = false;
+            
+            openDownloadPanel();
+            updateDownloadBadge();
+            renderDownloadQueue();
+            showToast(`מתחיל בהורדת ${filesToDownload.length} קבצים...`);
+
+            await processDownloadQueue();
         }
 
         // פונקציית הודעות צפה (Toast) לחיווי למשתמש
