@@ -13,24 +13,20 @@
             overflow-x: hidden;
         }
         
-        /* רקע נקודות עדין */
         .bg-pattern {
             background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
             background-size: 32px 32px;
         }
 
-        /* אנימציות כניסה */
         .fade-in { animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
         
-        /* פעימה למסך פתיחה */
         .pulse-slow { animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
         @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .8; transform: scale(1.05); } }
 
-        /* אנימציית ריחוף לרקע הזכוכית */
         .float-slow { animation: float 10s ease-in-out infinite; }
         .float-slower { animation: float 14s ease-in-out infinite reverse; }
         @keyframes float {
@@ -39,7 +35,6 @@
             100% { transform: translateY(0px) rotate(0deg); }
         }
 
-        /* גלילת טקסט לבאנר ההודעות */
         @keyframes scroll-text {
             0%, 15% { transform: translateX(0); } 
             100% { transform: translateX(100%); } 
@@ -54,7 +49,6 @@
             animation-play-state: paused;
         }
 
-        /* עיצוב פס גלילה */
         ::-webkit-scrollbar { width: 8px; height: 8px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
@@ -64,14 +58,12 @@
 </head>
 <body class="text-slate-800 min-h-screen relative selection:bg-indigo-200 selection:text-indigo-900 flex flex-col bg-pattern z-0">
     
-    <!-- רקע גרפי מודרני (Glassmorphism blobs) -->
     <div class="fixed inset-0 pointer-events-none overflow-hidden z-[-1]">
         <div class="absolute top-[-10%] left-[10%] w-[500px] h-[500px] rounded-full bg-gradient-to-br from-indigo-200/30 to-purple-200/30 blur-3xl float-slow"></div>
         <div class="absolute bottom-[10%] right-[-5%] w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-blue-200/30 to-indigo-100/30 blur-3xl float-slower"></div>
         <div class="absolute top-[40%] right-[30%] w-[300px] h-[300px] rounded-full bg-gradient-to-br from-orange-50/40 to-amber-100/40 blur-3xl float-slow" style="animation-delay: 2s;"></div>
     </div>
 
-    <!-- מסך פתיחה חכם -->
     <div id="splash-screen" class="fixed inset-0 z-[100] flex flex-col items-center justify-center transition-opacity duration-700 bg-slate-900">
         <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 opacity-95"></div>
         <div class="relative z-10 flex flex-col items-center text-center">
@@ -83,14 +75,13 @@
             
             <div class="mt-8 text-slate-400 text-sm opacity-80 fade-in" style="animation-delay: 0.3s;">
                 פותח על ידי 
-                <a href="https://mytovmail.github.io/Good-heart/" target="_blank" class="text-indigo-400 font-bold hover:text-indigo-300 hover:underline transition-colors">
+                <a href="https://lev-good.github.io/Good-heart/" target="_blank" class="text-indigo-400 font-bold hover:text-indigo-300 hover:underline transition-colors">
                     לב טוב
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- ניווט עליון -->
     <nav class="w-full bg-white/60 backdrop-blur-xl border-b border-white/50 sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="font-black text-xl text-indigo-900 flex items-center gap-2 cursor-pointer group" onclick="goHome()">
@@ -106,7 +97,6 @@
         </div>
     </nav>
 
-    <!-- באנר הודעות הנהלה חכם -->
     <div id="announcement-banner" class="hidden bg-gradient-to-r from-amber-100 to-orange-50 border-b border-amber-200 py-2.5 px-4 shadow-sm relative overflow-hidden z-40">
         <div class="max-w-7xl mx-auto flex items-center gap-3">
             <div class="bg-white/60 p-1.5 rounded-lg text-orange-600 flex-shrink-0 z-10 shadow-sm backdrop-blur-sm">
@@ -119,10 +109,7 @@
     </div>
 
     <main class="max-w-7xl mx-auto px-4 py-8 md:py-12 flex-1 w-full relative z-10">
-        
-        <!-- סרגל עליון: חיפוש + מה חדש -->
         <div class="flex flex-col md:flex-row gap-4 mb-8">
-            <!-- חיפוש גלובלי מיידי -->
             <div class="relative group flex-1">
                 <div class="absolute inset-y-0 right-0 pr-6 flex items-center pointer-events-none">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-400 group-focus-within:text-indigo-600 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
@@ -130,22 +117,16 @@
                 <input type="text" id="search-input" oninput="handleSearch()" placeholder="חפש פודקאסט, פרק, או נושא..." class="block w-full bg-white/80 backdrop-blur-md border border-white/50 rounded-[2rem] py-5 pr-14 pl-6 text-slate-800 focus:outline-none focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500 shadow-lg transition-all text-lg font-medium placeholder:text-slate-400">
             </div>
 
-            <!-- כפתור מה חדש -->
             <button onclick="showNewestFiles()" class="bg-gradient-to-l from-amber-400 to-orange-500 hover:from-amber-500 hover:to-orange-600 text-white font-bold py-5 px-8 rounded-[2rem] shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3 flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
                 <span class="text-lg">מה חדש?</span>
             </button>
         </div>
 
-        <!-- סרגל כלים: פירורי לחם, תצוגה ומיון -->
         <div class="bg-white/60 backdrop-blur-xl p-3 md:p-4 rounded-[1.5rem] border border-white/50 mb-8 flex flex-col md:flex-row items-center justify-between gap-4 shadow-sm">
-            
-            <!-- פירורי לחם -->
             <div id="breadcrumbs" class="flex items-center gap-2 overflow-x-auto no-scrollbar whitespace-nowrap w-full md:w-auto px-2"></div>
 
-            <!-- אפשרויות תצוגה ומיון -->
             <div class="flex items-center gap-4 w-full md:w-auto justify-end px-2">
-                <!-- בחירת מיון -->
                 <div class="flex items-center gap-2 bg-white/50 px-3 py-1.5 rounded-xl border border-white/50">
                     <label class="text-sm font-bold text-slate-500 hidden sm:block">מיון:</label>
                     <select id="sort-select" onchange="changeSort(this.value)" class="bg-transparent text-indigo-900 text-sm font-bold focus:outline-none cursor-pointer">
@@ -158,7 +139,6 @@
                 
                 <div class="h-8 w-px bg-slate-200 hidden sm:block"></div>
 
-                <!-- החלפת תצוגה -->
                 <div class="flex bg-white/50 border border-white/50 rounded-xl p-1 shadow-sm">
                     <button onclick="changeView('grid')" id="view-grid-btn" class="p-2 rounded-lg transition-colors" title="תצוגת רשת">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
@@ -170,30 +150,26 @@
             </div>
         </div>
 
-        <!-- אזור התוכן המרכזי -->
-        <div id="content-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <!-- התוכן ייטען כאן מיידית מהזיכרון -->
-        </div>
+        <div id="content-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
     </main>
 
     <footer class="mt-auto py-8 text-center border-t border-slate-200/60 bg-white/30 backdrop-blur-md relative z-10">
         <p class="text-slate-500 text-sm font-medium">
             מערכת מאגר פודקאסטים חכמה • פותח באהבה על ידי 
-            <a href="https://mytovmail.github.io/Good-heart/" target="_blank" class="font-black text-indigo-500 hover:text-indigo-700 hover:underline transition-colors relative inline-block">
+            <a href="https://lev-good.github.io/Good-heart/" target="_blank" class="font-black text-indigo-500 hover:text-indigo-700 hover:underline transition-colors relative inline-block">
                 לב טוב
             </a>
         </p>
     </footer>
 
     <script>
-        // מזהה תיקיית השורש 
         const ROOT_ID = '1YvJzJJlKzKMunkYQWAqwFGK6VElIW-WT';
         
         let db = { folders: {}, files: {} }; 
+        let fileToFolderMap = {}; 
         let navigationStack = [{ id: ROOT_ID, name: 'ראשי' }];
         let siteConfig = {};
         
-        // הגדרות תצוגה ומיון נשמרות בדפדפן
         let currentView = localStorage.getItem('podcast_view') || 'grid';
         let currentSort = localStorage.getItem('podcast_sort') || 'date-new';
 
@@ -212,18 +188,15 @@
                 const configRes = await fetch(getResourceUrl('config.json'));
                 if (configRes.ok) {
                     siteConfig = await configRes.json();
-                    
                     if (siteConfig.announcement && siteConfig.announcement.trim() !== "") {
                         const annText = document.getElementById('announcement-text');
                         annText.textContent = siteConfig.announcement;
-                        
                         if (siteConfig.announcement.length > 60) {
                             annText.classList.add('scroll-active');
                         } else {
                             annText.classList.remove('absolute', 'right-0');
                             annText.classList.add('w-full', 'text-center');
                         }
-                        
                         document.getElementById('announcement-banner').classList.remove('hidden');
                     }
                 }
@@ -245,6 +218,8 @@
                 if (!dbRes.ok) throw new Error("מסד הנתונים לא נמצא");
                 db = await dbRes.json();
 
+                buildFileToFolderMap();
+
                 hideSplash();
                 
                 if (navigationStack.length > 0) {
@@ -261,7 +236,16 @@
             }
         }
 
-        // --- ניהול תצוגה ומיון ---
+        function buildFileToFolderMap() {
+            fileToFolderMap = {};
+            Object.values(db.folders).forEach(folder => {
+                if (folder.files && Array.isArray(folder.files)) {
+                    folder.files.forEach(fileId => {
+                        fileToFolderMap[fileId] = folder.name;
+                    });
+                }
+            });
+        }
 
         function changeView(view) {
             currentView = view;
@@ -278,7 +262,6 @@
 
         function updateViewToggleUI() {
             document.getElementById('sort-select').value = currentSort;
-            
             const gridBtn = document.getElementById('view-grid-btn');
             const listBtn = document.getElementById('view-list-btn');
             const gridContainer = document.getElementById('content-grid');
@@ -290,7 +273,7 @@
             } else {
                 listBtn.className = 'p-2 rounded-lg bg-indigo-100 text-indigo-700 shadow-sm transition-colors';
                 gridBtn.className = 'p-2 rounded-lg text-slate-400 hover:text-indigo-500 transition-colors';
-                gridContainer.className = 'grid grid-cols-1 md:grid-cols-2 gap-4'; // רשימה תהיה ב-2 עמודות במסכים גדולים
+                gridContainer.className = 'grid grid-cols-1 md:grid-cols-2 gap-4'; 
             }
         }
 
@@ -320,8 +303,6 @@
                 return new Date(b.createdTime || 0) - new Date(a.createdTime || 0); 
             });
         }
-
-        // --- רינדור והצגה ---
 
         function hideSplash() {
             const splash = document.getElementById('splash-screen');
@@ -360,7 +341,6 @@
         function renderFolderCard(folderId, folder, delay = 0) {
             const grid = document.getElementById('content-grid');
             const card = document.createElement('div');
-            
             const paddingClass = currentView === 'list' ? 'p-4' : 'p-6 flex-col items-center text-center';
             const iconMargin = currentView === 'list' ? '' : 'mb-4';
             
@@ -386,20 +366,20 @@
             grid.appendChild(card);
         }
 
-        function renderFileCard(file, delay = 0) {
+        function renderFileCard(file, delay = 0, folderName = null) {
             const grid = document.getElementById('content-grid');
             const cleanName = file.name.replace(/\.[^/.]+$/, "");
-            
-            const safeName = cleanName.replace(/[&<>'"]/g, 
-                tag => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'}[tag] || tag)
-            );
-
+            const safeName = cleanName.replace(/[&<>'"]/g, tag => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'}[tag] || tag));
             const viewUrl = `https://drive.google.com/file/d/${file.id}/view`;
-            const card = document.createElement('div');
             
+            const parentName = folderName || fileToFolderMap[file.id] || "";
+            
+            const card = document.createElement('div');
             card.style.animation = `fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards ${delay}s`;
             card.style.opacity = '0';
             
+            const folderBadge = parentName ? `<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-50 text-indigo-600 border border-indigo-100 mb-1 leading-none max-w-full truncate" title="${parentName}">${parentName}</span>` : '';
+
             if (currentView === 'list') {
                 card.className = 'bg-white/80 backdrop-blur-lg rounded-[1.5rem] p-4 shadow-lg shadow-slate-200/30 border border-white/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:-translate-y-1 hover:shadow-xl hover:border-indigo-100 transition-all duration-300 group';
                 card.innerHTML = `
@@ -408,8 +388,10 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" /></svg>
                         </div>
                         <div class="min-w-0">
-                            <span class="text-[10px] font-bold text-indigo-500 block mb-1 tracking-widest">קובץ שמע</span>
-                            <h3 class="font-bold text-slate-800 leading-tight truncate text-lg group-hover:text-indigo-900 transition-colors" title="${safeName}">${safeName}</h3>
+                            <div class="flex flex-col">
+                                ${folderBadge}
+                                <h3 class="font-bold text-slate-800 leading-tight truncate text-lg group-hover:text-indigo-900 transition-colors" title="${safeName}">${safeName}</h3>
+                            </div>
                         </div>
                     </div>
                     <button onclick="openPlayerPopup('${viewUrl}')" class="w-full sm:w-auto shrink-0 bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-bold py-2.5 px-6 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-md shadow-indigo-500/20 hover:shadow-indigo-500/40 transform hover:scale-105">
@@ -424,60 +406,53 @@
                         <div class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-400 mb-4 group-hover:scale-110 group-hover:bg-indigo-100 group-hover:text-indigo-600 transition-all duration-300">
                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" /></svg>
                         </div>
-                        <span class="absolute top-2 left-0 text-[10px] font-bold text-slate-400 uppercase tracking-widest bg-slate-100 px-2 py-1 rounded-md">שמע</span>
-                        <h3 class="font-bold text-slate-800 text-lg leading-tight line-clamp-2 group-hover:text-indigo-900 transition-colors" title="${safeName}">${safeName}</h3>
+                        <div class="flex flex-col">
+                            ${folderBadge}
+                            <h3 class="font-bold text-slate-800 text-lg leading-tight line-clamp-2 group-hover:text-indigo-900 transition-colors" title="${safeName}">${safeName}</h3>
+                        </div>
                     </div>
                     <button onclick="openPlayerPopup('${viewUrl}')" class="mt-auto w-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-bold py-3.5 px-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transform group-hover:scale-[1.02]">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" /></svg>
-                        <span>האזנה וצפייה</span>
+                        <span>האזנה</span>
                     </button>
                 `;
             }
             grid.appendChild(card);
         }
 
-        // --- חיפוש ופונקציונליות ---
-
         function handleSearch() {
             const query = document.getElementById('search-input').value.trim().toLowerCase();
             const grid = document.getElementById('content-grid');
-            
             if (query.length < 2) {
                 renderFolder(navigationStack[navigationStack.length - 1].id);
                 return;
             }
-
             grid.innerHTML = '';
             let resultsCount = 0;
-            
             const matchedFoldersIds = [];
             Object.keys(db.folders).forEach(id => {
                 if (db.folders[id].name.toLowerCase().includes(query)) {
                     matchedFoldersIds.push(id);
                 }
             });
-            
             sortFoldersArray(matchedFoldersIds).forEach((folder, index) => {
                 if (resultsCount < 50) {
                     renderFolderCard(folder.id, folder, index * 0.05);
                     resultsCount++;
                 }
             });
-
             const matchedFilesIds = [];
             Object.values(db.files).forEach(file => {
                 if (file.name.toLowerCase().includes(query)) {
                     matchedFilesIds.push(file.id);
                 }
             });
-
             sortFilesArray(matchedFilesIds).forEach((file, index) => {
                 if (resultsCount < 50) {
                     renderFileCard(file, (matchedFoldersIds.length + index) * 0.05);
                     resultsCount++;
                 }
             });
-
             if (resultsCount === 0) {
                 grid.innerHTML = '<div class="col-span-full flex flex-col items-center justify-center py-20 fade-in"><div class="text-6xl mb-4 text-slate-300">🔍</div><h3 class="text-2xl font-bold text-slate-800 mb-2">לא מצאנו כלום</h3><p class="text-slate-500">נסה לחפש במילים אחרות או קצרות יותר.</p></div>';
             }
@@ -486,30 +461,23 @@
         function showNewestFiles() {
             const grid = document.getElementById('content-grid');
             grid.innerHTML = '';
-            
             document.getElementById('search-input').value = '';
-            
             document.getElementById('sort-select').value = 'date-new';
             currentSort = 'date-new';
             localStorage.setItem('podcast_sort', 'date-new');
-
             const container = document.getElementById('breadcrumbs');
             container.innerHTML = `
                 <button class="text-sm font-bold text-indigo-600 hover:bg-indigo-50 px-3 py-1.5 rounded-lg transition-colors" onclick="goHome()">ראשי</button>
                 <span class="text-slate-300 mx-1">/</span>
                 <span class="text-sm font-bold text-white bg-gradient-to-r from-orange-400 to-amber-500 px-3 py-1.5 rounded-lg shadow-sm">✨ התווספו לאחרונה</span>
             `;
-
             const allFilesIds = Object.keys(db.files);
             const sortedFiles = sortFilesArray(allFilesIds);
-            
             const newestFiles = sortedFiles.slice(0, 40);
-
             if (newestFiles.length === 0) {
                 grid.innerHTML = '<div class="col-span-full text-center py-12 text-slate-400">אין עדיין קבצים במאגר.</div>';
                 return;
             }
-
             newestFiles.forEach((file, index) => {
                 renderFileCard(file, index * 0.05);
             });
@@ -520,12 +488,7 @@
             const height = 450;
             const left = (window.screen.width / 2) - (width / 2);
             const top = (window.screen.height / 2) - (height / 2);
-            
-            window.open(
-                url, 
-                'PodcastPlayerPopup', 
-                `width=${width},height=${height},top=${top},left=${left},toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes`
-            );
+            window.open(url, 'PodcastPlayerPopup', `width=${width},height=${height},top=${top},left=${left},toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes`);
         }
 
         function renderBreadcrumbs() {
