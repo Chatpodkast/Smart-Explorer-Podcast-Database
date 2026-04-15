@@ -500,8 +500,32 @@
 
                 const downloadUrl = `https://drive.google.com/uc?export=download&id=${currentItem.id}`;
                 
-                // פתיחה בחלונית חדשה - הדרך היחידה לעקוף מנהלי הורדות
-                window.open(downloadUrl, '_blank');
+                // פתרון אלגנטי: פתיחת ההורדה בתוך "מסגרת נסתרת" (Iframe) במקום בלשונית חדשה
+                // זה מונע קפיצת לשוניות ועדיין מאפשר למנהלי הורדות (כמו IDM) לזהות את הבקשה
+                const iframeName = 'hidden_dl_' + currentItem.id;
+                const iframe = document.createElement('iframe');
+                iframe.name = iframeName;
+                // במקום display: none שמנהלי הורדות חוסמים לפעמים, נשתמש בהסתרה ויזואלית חכמה
+                iframe.style.position = 'absolute';
+                iframe.style.top = '-9999px';
+                iframe.style.width = '1px';
+                iframe.style.height = '1px';
+                iframe.style.opacity = '0';
+                document.body.appendChild(iframe);
+
+                // יצירת קישור פיקטיבי שלוחץ על עצמו אל תוך המסגרת הנסתרת
+                const link = document.createElement('a');
+                link.href = downloadUrl;
+                link.target = iframeName;
+                document.body.appendChild(link);
+                
+                link.click();
+
+                // ניקוי אלמנטים מהזיכרון אחרי שההורדה ודאי התחילה (10 שניות)
+                setTimeout(() => {
+                    if (document.body.contains(iframe)) document.body.removeChild(iframe);
+                    if (document.body.contains(link)) document.body.removeChild(link);
+                }, 10000);
 
                 // השהייה של 3 שניות בין קובץ לקובץ כדי לתת למנהל ההורדות זמן לזנק
                 if (i < downloadQueue.length - 1) {
