@@ -338,13 +338,87 @@
             }
         }
 
+        // פונקציה רקורסיבית לאיסוף כל הקבצים מתיקייה ותתי התיקיות
+        function getAllFilesInFolder(folderId, fileList = []) {
+            const folder = db.folders[folderId];
+            if (!folder) return fileList;
+            if (folder.files) {
+                fileList.push(...folder.files);
+            }
+            if (folder.subFolders) {
+                folder.subFolders.forEach(subId => {
+                    getAllFilesInFolder(subId, fileList);
+                });
+            }
+            return fileList;
+        }
+
+        // פונקציה להורדת קבצים ברצף (עם תור והשהייה)
+        async function startFolderDownload(folderId, btnElement) {
+            if (btnElement.disabled) return;
+            
+            const fileIds = getAllFilesInFolder(folderId);
+            if (fileIds.length === 0) {
+                showToast('התיקייה ריקה');
+                return;
+            }
+
+            btnElement.disabled = true;
+            const originalHTML = btnElement.innerHTML;
+            // החלפת האייקון לספינר טעינה
+            btnElement.innerHTML = `<svg class="animate-spin h-5 w-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>`;
+            
+            showToast(`מתחיל הורדה של ${fileIds.length} קבצים (זה עלול לקחת מעט זמן)...`);
+
+            for (let i = 0; i < fileIds.length; i++) {
+                const fileId = fileIds[i];
+                const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+                
+                // יצירת iframe נסתר להורדת הקובץ מבלי לפתוח חלונית חדשה
+                const iframe = document.createElement('iframe');
+                iframe.style.display = 'none';
+                iframe.src = downloadUrl;
+                document.body.appendChild(iframe);
+                
+                // ניקוי ה-iframe לאחר זמן מה למניעת עומס
+                setTimeout(() => {
+                    if(document.body.contains(iframe)) document.body.removeChild(iframe);
+                }, 15000);
+
+                // השהייה של 1.5 שניות בין קובץ לקובץ
+                await new Promise(resolve => setTimeout(resolve, 1500)); 
+            }
+
+            btnElement.disabled = false;
+            btnElement.innerHTML = originalHTML;
+            showToast(`הורדת הקבצים הסתיימה`);
+        }
+
+        // פונקציית הודעות צפה (Toast) לחיווי למשתמש
+        function showToast(message) {
+            let toast = document.getElementById('global-toast');
+            if (!toast) {
+                toast = document.createElement('div');
+                toast.id = 'global-toast';
+                toast.className = 'fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-slate-800 text-white font-bold px-6 py-3 rounded-full shadow-2xl z-[200] transition-all duration-300 opacity-0 translate-y-10 pointer-events-none';
+                document.body.appendChild(toast);
+            }
+            toast.textContent = message;
+            toast.classList.remove('opacity-0', 'translate-y-10');
+            
+            if (toast.timeoutId) clearTimeout(toast.timeoutId);
+            toast.timeoutId = setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-10');
+            }, 4000);
+        }
+
         function renderFolderCard(folderId, folder, delay = 0) {
             const grid = document.getElementById('content-grid');
             const card = document.createElement('div');
             const paddingClass = currentView === 'list' ? 'p-4' : 'p-6 flex-col items-center text-center';
             const iconMargin = currentView === 'list' ? '' : 'mb-4';
             
-            card.className = `bg-white/70 backdrop-blur-lg border border-white/60 ${paddingClass} rounded-[1.5rem] shadow-xl shadow-slate-200/40 cursor-pointer hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 hover:border-indigo-100 transition-all duration-300 flex ${currentView === 'list' ? 'items-center gap-5' : ''} group`;
+            card.className = `bg-white/70 backdrop-blur-lg border border-white/60 ${paddingClass} rounded-[1.5rem] shadow-xl shadow-slate-200/40 cursor-pointer hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 hover:border-indigo-100 transition-all duration-300 flex ${currentView === 'list' ? 'items-center gap-5' : 'relative'} group`;
             card.style.animation = `fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards ${delay}s`;
             card.style.opacity = '0';
             
@@ -353,16 +427,37 @@
                 navigationStack.push({ id: folderId, name: folder.name });
                 renderFolder(folderId);
             };
-            
-            card.innerHTML = `
-                <div class="${iconMargin} w-14 h-14 shrink-0 bg-gradient-to-br from-indigo-100 to-blue-50 rounded-2xl text-indigo-500 flex items-center justify-center group-hover:from-indigo-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-500 shadow-inner group-hover:shadow-[0_0_20px_rgba(99,102,241,0.4)]">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 20 20" fill="currentColor"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" /></svg>
-                </div>
-                <div class="flex-1 overflow-hidden">
-                    <h3 class="font-bold text-slate-800 truncate ${currentView === 'list' ? 'text-lg' : 'text-xl'} group-hover:text-indigo-900 transition-colors">${folder.name}</h3>
-                </div>
-                ${currentView === 'list' ? '<div class="text-slate-300 group-hover:text-indigo-400 group-hover:-translate-x-1 transition-all"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" /></svg></div>' : ''}
-            `;
+
+            if (currentView === 'list') {
+                card.innerHTML = `
+                    <div class="${iconMargin} w-14 h-14 shrink-0 bg-gradient-to-br from-indigo-100 to-blue-50 rounded-2xl text-indigo-500 flex items-center justify-center group-hover:from-indigo-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-500 shadow-inner group-hover:shadow-[0_0_20px_rgba(99,102,241,0.4)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 20 20" fill="currentColor"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" /></svg>
+                    </div>
+                    <div class="flex-1 overflow-hidden">
+                        <h3 class="font-bold text-slate-800 truncate text-lg group-hover:text-indigo-900 transition-colors">${folder.name}</h3>
+                    </div>
+                    <div class="flex items-center gap-3 shrink-0">
+                        <button onclick="event.stopPropagation(); startFolderDownload('${folderId}', this)" class="bg-white hover:bg-slate-50 border border-slate-200 text-slate-500 hover:text-indigo-600 p-2.5 rounded-xl transition-all duration-300 shadow-sm hover:shadow flex items-center justify-center hover:-translate-y-0.5" title="הורד את כל הקבצים שבתיקייה (ברצף)">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                        </button>
+                        <div class="text-slate-300 group-hover:text-indigo-400 group-hover:-translate-x-1 transition-all"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" /></svg></div>
+                    </div>
+                `;
+            } else {
+                card.innerHTML = `
+                    <div class="absolute top-4 left-4 z-10">
+                        <button onclick="event.stopPropagation(); startFolderDownload('${folderId}', this)" class="bg-white/90 backdrop-blur hover:bg-slate-50 border border-slate-200/80 text-slate-500 hover:text-indigo-600 p-2 rounded-xl transition-all duration-300 shadow-sm hover:shadow flex items-center justify-center hover:-translate-y-0.5" title="הורד את כל הקבצים שבתיקייה (ברצף)">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                        </button>
+                    </div>
+                    <div class="${iconMargin} w-14 h-14 shrink-0 bg-gradient-to-br from-indigo-100 to-blue-50 rounded-2xl text-indigo-500 flex items-center justify-center group-hover:from-indigo-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-500 shadow-inner group-hover:shadow-[0_0_20px_rgba(99,102,241,0.4)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 20 20" fill="currentColor"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" /></svg>
+                    </div>
+                    <div class="flex-1 overflow-hidden w-full">
+                        <h3 class="font-bold text-slate-800 truncate text-xl group-hover:text-indigo-900 transition-colors">${folder.name}</h3>
+                    </div>
+                `;
+            }
             grid.appendChild(card);
         }
 
