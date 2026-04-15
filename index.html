@@ -368,25 +368,25 @@
             // החלפת האייקון לספינר טעינה
             btnElement.innerHTML = `<svg class="animate-spin h-5 w-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>`;
             
-            showToast(`מתחיל הורדה של ${fileIds.length} קבצים (זה עלול לקחת מעט זמן)...`);
+            showToast(`מתחיל הורדה של ${fileIds.length} קבצים. אנא אשר לדפדפן הורדות מרובות אם תתבקש!`);
 
             for (let i = 0; i < fileIds.length; i++) {
                 const fileId = fileIds[i];
                 const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
                 
-                // יצירת iframe נסתר להורדת הקובץ מבלי לפתוח חלונית חדשה
-                const iframe = document.createElement('iframe');
-                iframe.style.display = 'none';
-                iframe.src = downloadUrl;
-                document.body.appendChild(iframe);
-                
-                // ניקוי ה-iframe לאחר זמן מה למניעת עומס
-                setTimeout(() => {
-                    if(document.body.contains(iframe)) document.body.removeChild(iframe);
-                }, 15000);
+                // שימוש באלמנט קישור (a tag) במקום iframe, אמין יותר להורדות מרובות
+                const link = document.createElement('a');
+                link.href = downloadUrl;
+                link.setAttribute('download', '');
+                link.style.display = 'none';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
 
-                // השהייה של 1.5 שניות בין קובץ לקובץ
-                await new Promise(resolve => setTimeout(resolve, 1500)); 
+                // השהייה של 2.5 שניות בין קובץ לקובץ למניעת חסימות דפדפן
+                if (i < fileIds.length - 1) {
+                    await new Promise(resolve => setTimeout(resolve, 2500)); 
+                }
             }
 
             btnElement.disabled = false;
