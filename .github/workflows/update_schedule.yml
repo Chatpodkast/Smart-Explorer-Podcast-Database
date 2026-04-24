@@ -2,7 +2,7 @@ name: Auto Update Database
 
 on:
   schedule:
-    - cron: '0 2 * * *' # רץ כל לילה בשעה 02:00
+    - cron: '0 */2 * * *'
   workflow_dispatch: # מאפשר גם הפעלה ידנית בלחיצת כפתור
 
 jobs:
