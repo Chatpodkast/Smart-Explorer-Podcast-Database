@@ -4,7 +4,7 @@ import sys
 import time
 
 # כתובת הסקריפט המעודכנת שלך
-GAS_URL = "https://script.google.com/macros/s/AKfycbz3nayW_1lGLHc84KGnPcn_-o5lre0-txUOYkqQWOjenYVcfs7CTteNURzy9olm8pz77w/exec"
+GAS_URL = "https://script.google.com/macros/s/AKfycbx5r0_TosJM-xqN-soBDOExrtXbjr5m7WgYVu12fm2eFeQyvZ7Kj-v3PO7-nQeZLDZ9OQ/exec"
 
 def fetch_all():
     try:
