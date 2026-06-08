@@ -235,7 +235,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         function getResourceUrl(filename) {
             const protocol = window.location.protocol;
             if (protocol === 'blob:' || protocol === 'data:' || protocol === 'file:') {
-                return `https://mytovmail.github.io/Podcast-database/${filename}?v=${Date.now()}`;
+            return `https://chatpodkast.github.io/Smart-Explorer-Podcast-Database/${filename}?v=${Date.now()}`;
             }
             return `${filename}?v=${Date.now()}`;
         }
