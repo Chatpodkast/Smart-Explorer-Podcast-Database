@@ -3,6 +3,7 @@
     "1YvJzJJlKzKMunkYQWAqwFGK6VElIW-WT": {
       "name": "פודקאסטים - חדש",
       "subFolders": [
+        "1xCv9w_cBFEULtySazGOmMBVt-lnRUvRN",
         "1EXEFRFc5QAElsTBeCejjZ51XKK_xIBS9",
         "1V-aN9o1KPBpCdOQmzf20wNFeSjNIbiQ1",
         "1IRA2jW0bPSWpigvdNrXVMWCjGCNu4LNv",
@@ -30,6 +31,22 @@
         "1rkNIWm2uZ3LKbmM1Qi1Gnefl3CWdrpIu"
       ],
       "files": [],
+      "processed": true,
+      "subFoldersFetched": true
+    },
+    "1xCv9w_cBFEULtySazGOmMBVt-lnRUvRN": {
+      "name": "תיקייה ללא שם",
+      "subFolders": [],
+      "files": [
+        "1jCgfC7pzofn4ifYFhwioZqopnCfAiln6",
+        "1tGD4oPyFYvpEKc_ziKyvmBvm8e6lOQPE",
+        "1VayNHUS4tm3Q6ZkHgv0y0U1ku9b2gtKZ",
+        "1s7FhLVMTA5T6FFmEXGZS9Z-iyghci2HV",
+        "1MsLpCsLMyMABT98nVBEKlLca9Gx5DPAv",
+        "13W8b9A6vkQL_kYBBJD9UxdMgfqJ-czyy",
+        "1tqAxoQ4ATYALuBfVIAnFe5HS0uTYOHLN",
+        "19aNJqwdRDSuLxsZ48RSv-6US-UkNXBts"
+      ],
       "processed": true,
       "subFoldersFetched": true
     },
@@ -417,6 +434,7 @@
     "1CoV6wMDpnIdr_ShPc5iVM9pY5o8GvD2q": {
       "name": "ראיונות",
       "subFolders": [
+        "1izR0p4XXyyDW5SF1z6bjEAzwE_0nyjzE",
         "15GctuPH2xPHkZ24M4zCOq5NdEI_NgiX7",
         "14Q81_qNCT4YAVEW1GLNjiZyi6N1TV6Ji",
         "1RcNrTra7_D2vxuUvA0dii5NgVspgz3Oe",
@@ -7770,6 +7788,19 @@
         "1MrfRdhArfnMHtLhOMHr3g_2RGo1TyHta",
         "1nnE6KZ1sbyJBJyzvPaa_hwyYHJ6Cugj8",
         "1lfwgGrmEvdmHrEFaybk6j5ygkuTRzdDi"
+      ],
+      "processed": true,
+      "subFoldersFetched": true
+    },
+    "1izR0p4XXyyDW5SF1z6bjEAzwE_0nyjzE": {
+      "name": "שוברת שורות",
+      "subFolders": [],
+      "files": [
+        "1jq_f6yjw4phpLwDnu3mzkbeTNM5bzBci",
+        "1n9GHLavleBqy2cH6PKq--dJguhqF3CJL",
+        "18xGl0YMmR8mY9eLZPpj0jQkeNdO5Tc9J",
+        "1MWsu6_IPyAld6hVNO13qb1CtvCS6jhjT",
+        "1i2zUp8im4HnzrRUETaY_gQYUsAs1fu90"
       ],
       "processed": true,
       "subFoldersFetched": true
@@ -16109,6 +16140,46 @@
     }
   },
   "files": {
+    "1jCgfC7pzofn4ifYFhwioZqopnCfAiln6": {
+      "id": "1jCgfC7pzofn4ifYFhwioZqopnCfAiln6",
+      "name": "פרק 597 אנטבה חלק 8 - על הקרקע.mp3",
+      "createdTime": "2026-06-28T11:15:04.016Z"
+    },
+    "1tGD4oPyFYvpEKc_ziKyvmBvm8e6lOQPE": {
+      "id": "1tGD4oPyFYvpEKc_ziKyvmBvm8e6lOQPE",
+      "name": "פרק 596 אנטבה חלק 7 - הטיסה לאנטבה.mp3",
+      "createdTime": "2026-06-28T11:14:33.751Z"
+    },
+    "1VayNHUS4tm3Q6ZkHgv0y0U1ku9b2gtKZ": {
+      "id": "1VayNHUS4tm3Q6ZkHgv0y0U1ku9b2gtKZ",
+      "name": "פרק 595 מבצע אנטבה - חלק 6.mp3",
+      "createdTime": "2026-06-28T11:14:59.973Z"
+    },
+    "1s7FhLVMTA5T6FFmEXGZS9Z-iyghci2HV": {
+      "id": "1s7FhLVMTA5T6FFmEXGZS9Z-iyghci2HV",
+      "name": "פרק 594 אנטבה- חלק 5.mp3",
+      "createdTime": "2026-06-28T11:15:08.307Z"
+    },
+    "1MsLpCsLMyMABT98nVBEKlLca9Gx5DPAv": {
+      "id": "1MsLpCsLMyMABT98nVBEKlLca9Gx5DPAv",
+      "name": "פרק 593 מבצע אנטבה חלק 4.mp3",
+      "createdTime": "2026-06-28T11:15:13.126Z"
+    },
+    "13W8b9A6vkQL_kYBBJD9UxdMgfqJ-czyy": {
+      "id": "13W8b9A6vkQL_kYBBJD9UxdMgfqJ-czyy",
+      "name": "פרק 592 מבצע אנטבה - חלק 3.mp3",
+      "createdTime": "2026-06-28T11:15:17.330Z"
+    },
+    "1tqAxoQ4ATYALuBfVIAnFe5HS0uTYOHLN": {
+      "id": "1tqAxoQ4ATYALuBfVIAnFe5HS0uTYOHLN",
+      "name": "פרק 591 מבצע אנטבה - חלק 2.mp3",
+      "createdTime": "2026-06-28T11:14:47.874Z"
+    },
+    "19aNJqwdRDSuLxsZ48RSv-6US-UkNXBts": {
+      "id": "19aNJqwdRDSuLxsZ48RSv-6US-UkNXBts",
+      "name": "פרק 590 מבצע אנטבה - חלק 1.mp3",
+      "createdTime": "2026-06-28T11:14:51.130Z"
+    },
     "18_9Jw7ASVa9qQlFm-Z_aiiOHtKySAd76": {
       "id": "18_9Jw7ASVa9qQlFm-Z_aiiOHtKySAd76",
       "name": "נחל עוז - המוצב שהופקר- פרק 1.mp3",
@@ -44873,6 +44944,31 @@
       "id": "1lfwgGrmEvdmHrEFaybk6j5ygkuTRzdDi",
       "name": "פרק 01 להתחיל מחדש.mp3",
       "createdTime": "2025-09-18T17:53:13.335Z"
+    },
+    "1jq_f6yjw4phpLwDnu3mzkbeTNM5bzBci": {
+      "id": "1jq_f6yjw4phpLwDnu3mzkbeTNM5bzBci",
+      "name": "פרק 05 שוברת שורות עם שולי רנד.mp3",
+      "createdTime": "2026-06-28T11:14:44.027Z"
+    },
+    "1n9GHLavleBqy2cH6PKq--dJguhqF3CJL": {
+      "id": "1n9GHLavleBqy2cH6PKq--dJguhqF3CJL",
+      "name": "פרק 04 שוברת שורות עם נטע ברזילי.mp3",
+      "createdTime": "2026-06-28T11:14:56.575Z"
+    },
+    "18xGl0YMmR8mY9eLZPpj0jQkeNdO5Tc9J": {
+      "id": "18xGl0YMmR8mY9eLZPpj0jQkeNdO5Tc9J",
+      "name": "פרק 03 שוברת שורות עם ג'ימבו ג'יי.mp3",
+      "createdTime": "2026-06-28T11:14:39.546Z"
+    },
+    "1MWsu6_IPyAld6hVNO13qb1CtvCS6jhjT": {
+      "id": "1MWsu6_IPyAld6hVNO13qb1CtvCS6jhjT",
+      "name": "פרק 02 שוברת שורות עם קובי אוז.mp3",
+      "createdTime": "2026-06-04T12:49:06.023Z"
+    },
+    "1i2zUp8im4HnzrRUETaY_gQYUsAs1fu90": {
+      "id": "1i2zUp8im4HnzrRUETaY_gQYUsAs1fu90",
+      "name": "פרק 01 שוברת שורות עם סטטיק.mp3",
+      "createdTime": "2026-05-31T12:45:48.909Z"
     },
     "1x0tjTdEFCVFqR39dEYH4jBGIRXdCnylN": {
       "id": "1x0tjTdEFCVFqR39dEYH4jBGIRXdCnylN",
