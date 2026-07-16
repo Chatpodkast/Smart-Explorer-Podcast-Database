@@ -153,6 +153,7 @@
       "subFolders": [
         "1FUmRBKH-viwGF4g5BRZLhD-3QJIf6Ar4",
         "1iy95L1x5agiIzWHGZjzKJorZa2wqHac8",
+        "1_mzyn4G5oUI09UmAaabHKG2idzwLVIeF",
         "1-R2B5ATDKqoE9IUgmSEmjWpYVhy9JoAT",
         "1GFBmrgnQNae7qXA2BDcwwJIdIerVIx0m",
         "1TquKczHn2-lfdVPjipt6uGJdrk52ZJt_",
@@ -405,8 +406,11 @@
       "name": "שונות",
       "subFolders": [
         "15_Hds40-JX2q6HbLtp4s5Ubo3MO7GHB6",
+        "1coRxCRLxYL7P7QRTz8r_hTDXCp-BUFsH",
         "1hh-NfxPWRor2RES6PkWo0ASHdm-9FhZ8",
         "1YvZjabF-Jv371O4oDAPjARx8K7XoT7Wc",
+        "1frtYqrJNpWcpSKchhPZ5zwPxfjrEdi-B",
+        "1jvhHrgtYc3a-miqPBA2SYzF6o9fISlVv",
         "19MbPRFYtY1B2IY0jtqbCI0qeuAycNz_F",
         "1MFNkB3xGgK0V7f3GIef2PEc0JXvl3kHy",
         "1Ag6Ar3uBQVSbZ8IeADZyQwsNL7b4rYSd",
@@ -2546,6 +2550,54 @@
         "1lc58J8EVqxKf21GuLRW0MT1kHRYQBIcF",
         "1NAgACd51cgBBwNDhl3lx2Voll2yEJsD6",
         "1uNbjDz55ltW6TKs8Uxx-US_x8vzQhJHl"
+      ],
+      "processed": true,
+      "subFoldersFetched": true
+    },
+    "1_mzyn4G5oUI09UmAaabHKG2idzwLVIeF": {
+      "name": "צור ויעקבי מסודר",
+      "subFolders": [],
+      "files": [
+        "12Ss_Q9I1ZJzeq1hKr4ryrEWjMtmQ9_69",
+        "1IdmLbwQs5XSq9K4ys4qnxmT3MCEL1qq4",
+        "1CbPNpDHRxq_6R4dfsqdWTnOoYmBMRBcp",
+        "1dzwnpKgRzwd43Jf-qiy3KrtqV6_XH9ys",
+        "1FEQ4ta3sFKPXgYMnfQ0UAlTsJuvUAxDC",
+        "1gxWj0-NR3ZExfmRND93Xjtw7jvbLXyhf",
+        "1lUvl9Pxbvm5Zz__ZLmte6qRY5xTNNKyC",
+        "1Jyv2l6pAvGyIpdVrWA3J6IWTTEO-aZRk",
+        "1j46kLcjQIg7Lbymcs5UUSaFnN8ux7W2L",
+        "193HGSvKaxbNZmM6jebu75M07N6OZ0KOH",
+        "1UfIvA0moibRv1oWuWwaw_Y6JxuPhuj2j",
+        "15YRy9-YcCbB-M2ykGnlUCACa19SW1kwD",
+        "1RmrLE2YhSgFlZL_CjDLZImsG5MlLnYug",
+        "1m0VxFi8xTXb7zD2m7JiFUUrpMGO1_FmR",
+        "1OrErGUoxKznTHjAvCgphs5svW9Kpb95W",
+        "1tho1HBKlChBrWWUKoBi6xxcLPpnVWyPN",
+        "1spAtvCy8LEPzj3m6r5GJaL0A7DRztotN",
+        "1F7Me5xXV0gGzrHNtXfYNSvYLEeRwKIFK",
+        "1MQNFdywnqQQ8PCbqrcTP-tYV1ZWqJ4Zb",
+        "16lbttlHBgMh1Oyc-0u6gQl4Ns4-NX4Uy",
+        "1_p-Kg42iVbFGB-XQ6liR7iWwfumpVLtj",
+        "17Q5kNVHx4eSbQmXtQSYL7wEQUPyKwPde",
+        "1Bu1YcwSaMo3QkKNXx4hmHNekOHxphH8J",
+        "1pkHfApMnRVVp1uxFh-SYAMaZ_G15-_fb",
+        "1vCjInwrnEzXDwDPuhOCu8ObveK9iUgI5",
+        "1zBGoil1cvOkUBSizsbnCAAVb0aY_ChJg",
+        "1xuhoLRnZFuCOVFA_d09ivrKHeiQSW3r1",
+        "13Uh4Blyp4usaIK99Y7xsInFPNyCGhG3u",
+        "1l5IQnYxgB1zOKlbJPI-_GL2G92NA6b7f",
+        "1DjQpDy0GcGhS5ub7bYADt9qQU0DXNeDS",
+        "1yRch3js5LyQCRPt8mmv3V-jrMS7ODxOm",
+        "1YXWSgdsxaTpR9EkOQkF1udmnvuOGGkxG",
+        "1Nl8WNFfd5_qSCgGBVxlgQYxH7dK1mQ9r",
+        "1t6X2CIvjofmtzaDCTc8b9tOhBxBm0dYi",
+        "1Ofx-5BHAro_miPfDZpzy6xFYy_J3hVE8",
+        "1ceed5k4uVaDk_v7HjTlyFYQgxvR5e3nq",
+        "1u_b0v62LF6TDnKdk301AFNazWQ6_K0Wh",
+        "1VpGb3cOqQZ_rvWzugQ-6irYiJDbZDlax",
+        "1hGW_rO0wxy31DKdf6cVVO0z_9IKLunC_",
+        "1danJbwM2MRmUOD2HiyMNI2XjWu0_gNZ_"
       ],
       "processed": true,
       "subFoldersFetched": true
@@ -7314,6 +7366,25 @@
       "processed": true,
       "subFoldersFetched": true
     },
+    "1coRxCRLxYL7P7QRTz8r_hTDXCp-BUFsH": {
+      "name": "\"סילמריליון קראתי עכשיו?!\"",
+      "subFolders": [],
+      "files": [
+        "1Lp9rvEqZ1QTiorQN5sJ1YSHyCMJrzajU",
+        "1o4gWLkjnl8CBQam1WaA5f_Tto8b0d__6",
+        "1am45AmoJ9-NUl-k1ISBIoqgJSUiw4UkT",
+        "12Kw0NlqG4fAiUshhaTNd33ygaDYX9idI",
+        "1bblF7q1G5bFclYFyCLen_TFUo5mVx8hU",
+        "17bzrU9n5PC-hsbwVB04iy3Bw_lhuUih3",
+        "1rw4i2Hxzl5H2HJGsHCqQLadEOz53CZbY",
+        "1snVxHSFQUXiQbS04epp7SkYdTsQ_M59e",
+        "13P-MXPiX32o0_Go4GmqxTPOKD2GmY7zs",
+        "1-Hhay-QLSn96W0SpapQIB8b10w9rpLgl",
+        "1jxc3gnktWwAasTUz0vGHG4Z26tqmc9T4"
+      ],
+      "processed": true,
+      "subFoldersFetched": true
+    },
     "1hh-NfxPWRor2RES6PkWo0ASHdm-9FhZ8": {
       "name": "על אנשים וקהילות",
       "subFolders": [],
@@ -7333,6 +7404,53 @@
         "19Ds9Yl1lfLh1zply75rLOPxFlRPGTgHS",
         "18PblYrVMfwQJo6gBjW0UVnsDyosdyIrd",
         "1mrAwvFF_VuEDw_qpwMteGvxBfpIr9ZgD"
+      ],
+      "processed": true,
+      "subFoldersFetched": true
+    },
+    "1frtYqrJNpWcpSKchhPZ5zwPxfjrEdi-B": {
+      "name": "פוטרקאסט מתוקן",
+      "subFolders": [
+        "1KoJfuMg7qadFcZx9U08A3BvJJNfMhaxV",
+        "1E2Cx3CORLn2oa72BwvMppJHalr6dEu9z"
+      ],
+      "files": [],
+      "processed": true,
+      "subFoldersFetched": true
+    },
+    "1jvhHrgtYc3a-miqPBA2SYzF6o9fISlVv": {
+      "name": "אבא של יונתן והבן שלו",
+      "subFolders": [],
+      "files": [
+        "1XvWfKoFHR89ASzqNCiSrLm8pBCMdE3j-",
+        "14PPpepqKcyDBiO7MGmga3UzyTzTJ4gcQ",
+        "1VuR097pE2pHKPgFp95k9AQOkwwWaQLfK",
+        "1-_LPVKzGUmMCcAk9BEUyekmL4-Mmzqy7",
+        "1FQaD5Tjwr5TYNMHY3o1lr4NlV4Fr6h7H",
+        "1O_SNLBoJKabdAD3I5Pe0wZSE6xPzvBqI",
+        "1QcjCwHbE1ItN8flEzsVQg5cLFX6Ql3Sx",
+        "1Vq_Hi6llYRxNcSvH1xeXBOOTBnofWq2Y",
+        "1D95WJTJgQc5Vb8-qWi6VG_6UJQyOWNYI",
+        "1ueTUyF-kaM-vPnwNGJHufOg99yE0YRAu",
+        "1yp_8PK3ftw2077Jo6xU5Q2JhA0RzVVmO",
+        "1JVX4nwfQKuc_MADhqbHH8UM3R0DES4CY",
+        "1ZWGNHbFfn8eP3GD0T4vKUOcN9cgzVbYe",
+        "1pzTIYdxDfszrdCXtcoGkIgF7nekKRdaq",
+        "1lfnEywhpYnL8gDchKKmykxMDdHasDZYh",
+        "1uDAVKll_F78P8fLzZpUpuO3LIo-eIfBf",
+        "1pQM4SHxKd1HpdAvNnyqIMOCTaPNgZP_Y",
+        "1sCGTQGOkqP20N3J-Ho15qKimmlDpTu3J",
+        "15QUiSdAuKmHeFr7M42n7-8VeB4BQv3X0",
+        "1Ee8D_Fd8Xg9M8XHeWFAcFL60FsB_dvlE",
+        "11pnk58QtyeosYBTm2oMMMG5BKv9HYSsv",
+        "1Sjlf71_8lQ1vGOxcdQXUv8Dea7m_wcYJ",
+        "174y3Ozu0xNendA6B2yUsQVvpjlL4U4-p",
+        "1sn0aocY5SGn8k42XndUURunT5a87rkoh",
+        "1B1QYIue_PBbrueltg-Crf3lh4vTWM3i5",
+        "15i5YLiiEbNl9Mleyvc51NGmsxLZMnFin",
+        "1sAos3rpo9JueOU2eprJHQWLQyv9twb9P",
+        "1tzAyMNQRGWFGu8W_GECW2pzbGOex_X1j",
+        "1yT_10ymkv-GmthLYphszj20a7zEhb-ix"
       ],
       "processed": true,
       "subFoldersFetched": true
@@ -10962,6 +11080,44 @@
         "1tBB1Kriwvmp11aXO5_5rSFFGAPt2uW5l",
         "17VUl6f3wQOEBT4Qm2uIpFcVi693QpCRu",
         "1JLlT4WpoHZ3H6nU3QdZ6uYMKUqvBsSkA"
+      ],
+      "processed": true,
+      "subFoldersFetched": true
+    },
+    "1KoJfuMg7qadFcZx9U08A3BvJJNfMhaxV": {
+      "name": "עונה 2",
+      "subFolders": [],
+      "files": [
+        "1V-owLQCXX8S1MaNaA-FVu-wwdxI7wXE8",
+        "1oEfNjpnzR3VZkz1DNOTugLY_cAUBkj9H",
+        "1LyZiouwRb8qE_NnJCqHMoCrKc3UwbuqI",
+        "1kPHq57rCa8KpfpbQtxHnquV_QWLyu__-",
+        "1q50C87slzwDQXGz0hlimGcLhIMqO4OMU",
+        "1nntwFMF193m2HNESdECnl5eXX5g_hZ1B",
+        "1rGlkqF69h4kVZqZSUJXKbqBdy_Af0ZFT",
+        "1DvFHh-DlNaWudLvVdLyy-jBOBQpqvFq2",
+        "1ODcW1z-31Xdknjucb29v0DpIVpxqxYvC",
+        "1IHpPlLn-T6TVSYo6t8gEybwmVRVLBiHv"
+      ],
+      "processed": true,
+      "subFoldersFetched": true
+    },
+    "1E2Cx3CORLn2oa72BwvMppJHalr6dEu9z": {
+      "name": "עונה 1",
+      "subFolders": [],
+      "files": [
+        "1UkYT1H8sWyzycgtXBt7pRkUFjw18KIsV",
+        "10ObXp52qDGD_OTUXnuWXgxx73dL9vpDt",
+        "1tUzVsUxypA3J9Fsa2ylZhZ5XaXn9y4Uq",
+        "1Ommn2bPjgujdFsQBdVGL1JjnjWbFCT_-",
+        "1KUnnaJuSQXmtZxJ8l19ORaiy_3vEUsKN",
+        "1GUSpZb7-b3wejeoodLFsth8P3oPKX--C",
+        "1grSogFcZ0r3t1sKVUvzBjxYHefbjlrB7",
+        "1e-BS448jxjwOrn9T6LjRRUK8HvZ7wGd3",
+        "10rKO9IKhsK4LYbYP7-gSJWvvSuk0qXON",
+        "12mvhD5oma2U9XmhDSnnVXvCsVD4to6j5",
+        "1b9m0AIHFF1AznQaNny5gmKKTHvlB61EP",
+        "1mnc3IfdZUhH0rUfO6oOAUeHmPhw-7Mtg"
       ],
       "processed": true,
       "subFoldersFetched": true
@@ -24625,6 +24781,206 @@
       "id": "1uNbjDz55ltW6TKs8Uxx-US_x8vzQhJHl",
       "name": "פרק 10 אוראל צברי ואמירם טובים.m4a",
       "createdTime": "2026-06-04T12:47:12.772Z"
+    },
+    "12Ss_Q9I1ZJzeq1hKr4ryrEWjMtmQ9_69": {
+      "id": "12Ss_Q9I1ZJzeq1hKr4ryrEWjMtmQ9_69",
+      "name": "לקט.mp3",
+      "createdTime": "2026-01-22T15:58:44.870Z"
+    },
+    "1IdmLbwQs5XSq9K4ys4qnxmT3MCEL1qq4": {
+      "id": "1IdmLbwQs5XSq9K4ys4qnxmT3MCEL1qq4",
+      "name": "המיטב של תמימה.mp3",
+      "createdTime": "2026-01-22T15:57:39.563Z"
+    },
+    "1CbPNpDHRxq_6R4dfsqdWTnOoYmBMRBcp": {
+      "id": "1CbPNpDHRxq_6R4dfsqdWTnOoYmBMRBcp",
+      "name": "המיטב של ליימך שטוץ.mp3",
+      "createdTime": "2026-01-22T15:56:38.835Z"
+    },
+    "1dzwnpKgRzwd43Jf-qiy3KrtqV6_XH9ys": {
+      "id": "1dzwnpKgRzwd43Jf-qiy3KrtqV6_XH9ys",
+      "name": "המיטב של אריק.mp3",
+      "createdTime": "2026-01-22T15:55:28.108Z"
+    },
+    "1FEQ4ta3sFKPXgYMnfQ0UAlTsJuvUAxDC": {
+      "id": "1FEQ4ta3sFKPXgYMnfQ0UAlTsJuvUAxDC",
+      "name": "36. כל התחלה היא סוף חדש.mp3",
+      "createdTime": "2026-01-22T15:54:41.109Z"
+    },
+    "1gxWj0-NR3ZExfmRND93Xjtw7jvbLXyhf": {
+      "id": "1gxWj0-NR3ZExfmRND93Xjtw7jvbLXyhf",
+      "name": "35. מה ששנוא עליך אל תעשה.mp3",
+      "createdTime": "2026-01-22T15:51:21.956Z"
+    },
+    "1lUvl9Pxbvm5Zz__ZLmte6qRY5xTNNKyC": {
+      "id": "1lUvl9Pxbvm5Zz__ZLmte6qRY5xTNNKyC",
+      "name": "34. יש לך במה להתבייש.mp3",
+      "createdTime": "2026-01-22T15:49:51.125Z"
+    },
+    "1Jyv2l6pAvGyIpdVrWA3J6IWTTEO-aZRk": {
+      "id": "1Jyv2l6pAvGyIpdVrWA3J6IWTTEO-aZRk",
+      "name": "32. שישים זה השישים החדש.mp3",
+      "createdTime": "2026-01-22T15:46:48.030Z"
+    },
+    "1j46kLcjQIg7Lbymcs5UUSaFnN8ux7W2L": {
+      "id": "1j46kLcjQIg7Lbymcs5UUSaFnN8ux7W2L",
+      "name": "33. שימו את כל הכסף בנפט.mp3",
+      "createdTime": "2026-01-22T15:48:21.158Z"
+    },
+    "193HGSvKaxbNZmM6jebu75M07N6OZ0KOH": {
+      "id": "193HGSvKaxbNZmM6jebu75M07N6OZ0KOH",
+      "name": "30. תתלבש בשביל העבודה שיש לך.mp3",
+      "createdTime": "2026-01-22T15:43:29.807Z"
+    },
+    "1UfIvA0moibRv1oWuWwaw_Y6JxuPhuj2j": {
+      "id": "1UfIvA0moibRv1oWuWwaw_Y6JxuPhuj2j",
+      "name": "31. יום ללא דכדוך הוא יום מבוזבז.mp3",
+      "createdTime": "2026-01-22T15:45:01.861Z"
+    },
+    "15YRy9-YcCbB-M2ykGnlUCACa19SW1kwD": {
+      "id": "15YRy9-YcCbB-M2ykGnlUCACa19SW1kwD",
+      "name": "29. יגעת ומצאת, אולי זה מזל.mp3",
+      "createdTime": "2026-01-22T15:41:58.508Z"
+    },
+    "1RmrLE2YhSgFlZL_CjDLZImsG5MlLnYug": {
+      "id": "1RmrLE2YhSgFlZL_CjDLZImsG5MlLnYug",
+      "name": "28. אכול ושתה כי מחר נמות.mp3",
+      "createdTime": "2026-01-22T15:40:35.867Z"
+    },
+    "1m0VxFi8xTXb7zD2m7JiFUUrpMGO1_FmR": {
+      "id": "1m0VxFi8xTXb7zD2m7JiFUUrpMGO1_FmR",
+      "name": "27. האכל את הטרול.mp3",
+      "createdTime": "2026-01-22T15:39:24.052Z"
+    },
+    "1OrErGUoxKznTHjAvCgphs5svW9Kpb95W": {
+      "id": "1OrErGUoxKznTHjAvCgphs5svW9Kpb95W",
+      "name": "26. חנוך לנער על פי דרכך.mp3",
+      "createdTime": "2026-01-22T15:37:52.176Z"
+    },
+    "1tho1HBKlChBrWWUKoBi6xxcLPpnVWyPN": {
+      "id": "1tho1HBKlChBrWWUKoBi6xxcLPpnVWyPN",
+      "name": "25. ברומא התנהג כישראלי.mp3",
+      "createdTime": "2026-01-22T15:36:46.447Z"
+    },
+    "1spAtvCy8LEPzj3m6r5GJaL0A7DRztotN": {
+      "id": "1spAtvCy8LEPzj3m6r5GJaL0A7DRztotN",
+      "name": "24. סטיבן סיגל‽.mp3",
+      "createdTime": "2026-01-22T15:35:09.211Z"
+    },
+    "1F7Me5xXV0gGzrHNtXfYNSvYLEeRwKIFK": {
+      "id": "1F7Me5xXV0gGzrHNtXfYNSvYLEeRwKIFK",
+      "name": "22. תביא נטעם.mp3",
+      "createdTime": "2026-01-22T15:32:16.385Z"
+    },
+    "1MQNFdywnqQQ8PCbqrcTP-tYV1ZWqJ4Zb": {
+      "id": "1MQNFdywnqQQ8PCbqrcTP-tYV1ZWqJ4Zb",
+      "name": "23. שנינות בלתי נסבלת.mp3",
+      "createdTime": "2026-01-22T15:33:34.710Z"
+    },
+    "16lbttlHBgMh1Oyc-0u6gQl4Ns4-NX4Uy": {
+      "id": "16lbttlHBgMh1Oyc-0u6gQl4Ns4-NX4Uy",
+      "name": "20. רכיבה על זוזים.mp3",
+      "createdTime": "2026-01-22T15:29:30.015Z"
+    },
+    "1_p-Kg42iVbFGB-XQ6liR7iWwfumpVLtj": {
+      "id": "1_p-Kg42iVbFGB-XQ6liR7iWwfumpVLtj",
+      "name": "21. ריק וסמוטריץ'.mp3",
+      "createdTime": "2026-01-22T15:30:53.385Z"
+    },
+    "17Q5kNVHx4eSbQmXtQSYL7wEQUPyKwPde": {
+      "id": "17Q5kNVHx4eSbQmXtQSYL7wEQUPyKwPde",
+      "name": "18. מתי וברי.mp3",
+      "createdTime": "2026-01-22T15:27:08.823Z"
+    },
+    "1Bu1YcwSaMo3QkKNXx4hmHNekOHxphH8J": {
+      "id": "1Bu1YcwSaMo3QkKNXx4hmHNekOHxphH8J",
+      "name": "19. הליגה נגד השמצה.mp3",
+      "createdTime": "2026-01-22T15:28:17.500Z"
+    },
+    "1pkHfApMnRVVp1uxFh-SYAMaZ_G15-_fb": {
+      "id": "1pkHfApMnRVVp1uxFh-SYAMaZ_G15-_fb",
+      "name": "17. מודל התמנון.mp3",
+      "createdTime": "2026-01-22T15:26:05.408Z"
+    },
+    "1vCjInwrnEzXDwDPuhOCu8ObveK9iUgI5": {
+      "id": "1vCjInwrnEzXDwDPuhOCu8ObveK9iUgI5",
+      "name": "15. יאיר החדש.mp3",
+      "createdTime": "2026-01-22T15:23:26.226Z"
+    },
+    "1zBGoil1cvOkUBSizsbnCAAVb0aY_ChJg": {
+      "id": "1zBGoil1cvOkUBSizsbnCAAVb0aY_ChJg",
+      "name": "16. מניחים ראש.mp3",
+      "createdTime": "2026-01-22T15:24:42.275Z"
+    },
+    "1xuhoLRnZFuCOVFA_d09ivrKHeiQSW3r1": {
+      "id": "1xuhoLRnZFuCOVFA_d09ivrKHeiQSW3r1",
+      "name": "14. ביטוח חיים.mp3",
+      "createdTime": "2026-01-22T15:22:19.624Z"
+    },
+    "13Uh4Blyp4usaIK99Y7xsInFPNyCGhG3u": {
+      "id": "13Uh4Blyp4usaIK99Y7xsInFPNyCGhG3u",
+      "name": "12. פירוק והרכבה.mp3",
+      "createdTime": "2026-01-22T15:19:26.351Z"
+    },
+    "1l5IQnYxgB1zOKlbJPI-_GL2G92NA6b7f": {
+      "id": "1l5IQnYxgB1zOKlbJPI-_GL2G92NA6b7f",
+      "name": "13. פנחס המאופס.mp3",
+      "createdTime": "2026-01-22T15:20:45.962Z"
+    },
+    "1DjQpDy0GcGhS5ub7bYADt9qQU0DXNeDS": {
+      "id": "1DjQpDy0GcGhS5ub7bYADt9qQU0DXNeDS",
+      "name": "11. מיטות משונות.mp3",
+      "createdTime": "2026-01-22T15:18:16.722Z"
+    },
+    "1yRch3js5LyQCRPt8mmv3V-jrMS7ODxOm": {
+      "id": "1yRch3js5LyQCRPt8mmv3V-jrMS7ODxOm",
+      "name": "10 כאן חורבן.mp3",
+      "createdTime": "2026-01-22T15:17:14.107Z"
+    },
+    "1YXWSgdsxaTpR9EkOQkF1udmnvuOGGkxG": {
+      "id": "1YXWSgdsxaTpR9EkOQkF1udmnvuOGGkxG",
+      "name": "09. הישראלי המכוער.mp3",
+      "createdTime": "2026-01-22T15:16:03.948Z"
+    },
+    "1Nl8WNFfd5_qSCgGBVxlgQYxH7dK1mQ9r": {
+      "id": "1Nl8WNFfd5_qSCgGBVxlgQYxH7dK1mQ9r",
+      "name": "07. ילדי מולד הירח.mp3",
+      "createdTime": "2026-01-22T15:13:32.122Z"
+    },
+    "1t6X2CIvjofmtzaDCTc8b9tOhBxBm0dYi": {
+      "id": "1t6X2CIvjofmtzaDCTc8b9tOhBxBm0dYi",
+      "name": "08. ארז נגה.mp3",
+      "createdTime": "2026-01-22T15:14:43.506Z"
+    },
+    "1Ofx-5BHAro_miPfDZpzy6xFYy_J3hVE8": {
+      "id": "1Ofx-5BHAro_miPfDZpzy6xFYy_J3hVE8",
+      "name": "06. נכנסים לשוק הקריפטו.mp3",
+      "createdTime": "2026-01-22T15:12:15.569Z"
+    },
+    "1ceed5k4uVaDk_v7HjTlyFYQgxvR5e3nq": {
+      "id": "1ceed5k4uVaDk_v7HjTlyFYQgxvR5e3nq",
+      "name": "05.עוזבים את בלפור.mp3",
+      "createdTime": "2026-01-22T15:10:51.237Z"
+    },
+    "1u_b0v62LF6TDnKdk301AFNazWQ6_K0Wh": {
+      "id": "1u_b0v62LF6TDnKdk301AFNazWQ6_K0Wh",
+      "name": "04. החדר שלא נכנסים אליו.mp3",
+      "createdTime": "2026-01-22T15:09:14.576Z"
+    },
+    "1VpGb3cOqQZ_rvWzugQ-6irYiJDbZDlax": {
+      "id": "1VpGb3cOqQZ_rvWzugQ-6irYiJDbZDlax",
+      "name": "03. לא סוגרים ת'בסטה.mp3",
+      "createdTime": "2026-01-22T15:08:06.696Z"
+    },
+    "1hGW_rO0wxy31DKdf6cVVO0z_9IKLunC_": {
+      "id": "1hGW_rO0wxy31DKdf6cVVO0z_9IKLunC_",
+      "name": "02. אין דבר כזה מחלות.mp3",
+      "createdTime": "2026-01-22T15:07:01.178Z"
+    },
+    "1danJbwM2MRmUOD2HiyMNI2XjWu0_gNZ_": {
+      "id": "1danJbwM2MRmUOD2HiyMNI2XjWu0_gNZ_",
+      "name": "01. מחפשים את סטיבן סיגל.mp3",
+      "createdTime": "2026-01-22T15:05:41.487Z"
     },
     "1_HmxYGhrC3Q3fO-qDwzsmG5xxL_EBagk": {
       "id": "1_HmxYGhrC3Q3fO-qDwzsmG5xxL_EBagk",
@@ -43561,6 +43917,61 @@
       "name": "עותק של פרק 35  פרקי אבות.mp3",
       "createdTime": "2026-07-03T07:05:12.066Z"
     },
+    "1Lp9rvEqZ1QTiorQN5sJ1YSHyCMJrzajU": {
+      "id": "1Lp9rvEqZ1QTiorQN5sJ1YSHyCMJrzajU",
+      "name": "פרק 10.mp3",
+      "createdTime": "2026-07-02T20:48:07.671Z"
+    },
+    "1o4gWLkjnl8CBQam1WaA5f_Tto8b0d__6": {
+      "id": "1o4gWLkjnl8CBQam1WaA5f_Tto8b0d__6",
+      "name": "פרק 9.mp3",
+      "createdTime": "2026-07-02T21:12:10.035Z"
+    },
+    "1am45AmoJ9-NUl-k1ISBIoqgJSUiw4UkT": {
+      "id": "1am45AmoJ9-NUl-k1ISBIoqgJSUiw4UkT",
+      "name": "פרק 7.mp3",
+      "createdTime": "2026-07-02T21:07:48.646Z"
+    },
+    "12Kw0NlqG4fAiUshhaTNd33ygaDYX9idI": {
+      "id": "12Kw0NlqG4fAiUshhaTNd33ygaDYX9idI",
+      "name": "פרק 7 כפול.mp3",
+      "createdTime": "2026-07-02T21:05:22.577Z"
+    },
+    "1bblF7q1G5bFclYFyCLen_TFUo5mVx8hU": {
+      "id": "1bblF7q1G5bFclYFyCLen_TFUo5mVx8hU",
+      "name": "פרק 6.mp3",
+      "createdTime": "2026-07-02T21:02:54.056Z"
+    },
+    "17bzrU9n5PC-hsbwVB04iy3Bw_lhuUih3": {
+      "id": "17bzrU9n5PC-hsbwVB04iy3Bw_lhuUih3",
+      "name": "פרק 5.mp3",
+      "createdTime": "2026-07-02T20:59:46.362Z"
+    },
+    "1rw4i2Hxzl5H2HJGsHCqQLadEOz53CZbY": {
+      "id": "1rw4i2Hxzl5H2HJGsHCqQLadEOz53CZbY",
+      "name": "פרק 4 גן עדן למחודדי אוזניים.mp3",
+      "createdTime": "2026-07-02T20:56:19.700Z"
+    },
+    "1snVxHSFQUXiQbS04epp7SkYdTsQ_M59e": {
+      "id": "1snVxHSFQUXiQbS04epp7SkYdTsQ_M59e",
+      "name": "פרק 3 ילדים זה שמחה גמדאים זה ברכה.mp3",
+      "createdTime": "2026-07-02T20:53:31.046Z"
+    },
+    "13P-MXPiX32o0_Go4GmqxTPOKD2GmY7zs": {
+      "id": "13P-MXPiX32o0_Go4GmqxTPOKD2GmY7zs",
+      "name": "פרק 2 רשימת מכולת אלוהית.mp3",
+      "createdTime": "2026-07-02T20:50:21.845Z"
+    },
+    "1-Hhay-QLSn96W0SpapQIB8b10w9rpLgl": {
+      "id": "1-Hhay-QLSn96W0SpapQIB8b10w9rpLgl",
+      "name": "פרק 1 לשיר עם האלים.mp3",
+      "createdTime": "2026-07-02T20:44:34.274Z"
+    },
+    "1jxc3gnktWwAasTUz0vGHG4Z26tqmc9T4": {
+      "id": "1jxc3gnktWwAasTUz0vGHG4Z26tqmc9T4",
+      "name": "פרק 0 הכנה נפשית.mp3",
+      "createdTime": "2026-07-02T20:42:43.284Z"
+    },
     "1-o93B8mpCjPfg_h0hDlMK3nfIKlYlT2Z": {
       "id": "1-o93B8mpCjPfg_h0hDlMK3nfIKlYlT2Z",
       "name": "פרק 02 קולות מן העבר.mp3",
@@ -43595,6 +44006,151 @@
       "id": "1mrAwvFF_VuEDw_qpwMteGvxBfpIr9ZgD",
       "name": "איך ליצור קורות חיים באנגלית.mp3",
       "createdTime": "2026-02-08T10:25:24.934Z"
+    },
+    "1XvWfKoFHR89ASzqNCiSrLm8pBCMdE3j-": {
+      "id": "1XvWfKoFHR89ASzqNCiSrLm8pBCMdE3j-",
+      "name": "29. כשאמא ואבא סטנדאפיסטים.mp3",
+      "createdTime": "2026-01-18T12:29:45.747Z"
+    },
+    "14PPpepqKcyDBiO7MGmga3UzyTzTJ4gcQ": {
+      "id": "14PPpepqKcyDBiO7MGmga3UzyTzTJ4gcQ",
+      "name": "28. תסמונת ז'אז'ה גאבור.mp3",
+      "createdTime": "2026-01-18T12:27:52.441Z"
+    },
+    "1VuR097pE2pHKPgFp95k9AQOkwwWaQLfK": {
+      "id": "1VuR097pE2pHKPgFp95k9AQOkwwWaQLfK",
+      "name": "27. הומור.mp3",
+      "createdTime": "2026-01-18T12:26:25.165Z"
+    },
+    "1-_LPVKzGUmMCcAk9BEUyekmL4-Mmzqy7": {
+      "id": "1-_LPVKzGUmMCcAk9BEUyekmL4-Mmzqy7",
+      "name": "26. קללות וגסויות.mp3",
+      "createdTime": "2026-01-18T12:24:52.035Z"
+    },
+    "1FQaD5Tjwr5TYNMHY3o1lr4NlV4Fr6h7H": {
+      "id": "1FQaD5Tjwr5TYNMHY3o1lr4NlV4Fr6h7H",
+      "name": "24. קסמים.mp3",
+      "createdTime": "2026-01-18T12:21:21.500Z"
+    },
+    "1O_SNLBoJKabdAD3I5Pe0wZSE6xPzvBqI": {
+      "id": "1O_SNLBoJKabdAD3I5Pe0wZSE6xPzvBqI",
+      "name": "25. תיאטרון.mp3",
+      "createdTime": "2026-01-18T12:23:13.160Z"
+    },
+    "1QcjCwHbE1ItN8flEzsVQg5cLFX6Ql3Sx": {
+      "id": "1QcjCwHbE1ItN8flEzsVQg5cLFX6Ql3Sx",
+      "name": "22. קעקועים.mp3",
+      "createdTime": "2026-01-18T12:18:14.112Z"
+    },
+    "1Vq_Hi6llYRxNcSvH1xeXBOOTBnofWq2Y": {
+      "id": "1Vq_Hi6llYRxNcSvH1xeXBOOTBnofWq2Y",
+      "name": "23. האנשים הזקנים בעולם.mp3",
+      "createdTime": "2026-01-18T12:19:39.211Z"
+    },
+    "1D95WJTJgQc5Vb8-qWi6VG_6UJQyOWNYI": {
+      "id": "1D95WJTJgQc5Vb8-qWi6VG_6UJQyOWNYI",
+      "name": "21. ג'יימס בונד.mp3",
+      "createdTime": "2026-01-18T12:16:46.818Z"
+    },
+    "1ueTUyF-kaM-vPnwNGJHufOg99yE0YRAu": {
+      "id": "1ueTUyF-kaM-vPnwNGJHufOg99yE0YRAu",
+      "name": "20. חיי נצח וחיים שלאחר המוות.mp3",
+      "createdTime": "2026-01-18T12:15:06.564Z"
+    },
+    "1yp_8PK3ftw2077Jo6xU5Q2JhA0RzVVmO": {
+      "id": "1yp_8PK3ftw2077Jo6xU5Q2JhA0RzVVmO",
+      "name": "19. תוספות מזון.mp3",
+      "createdTime": "2026-01-18T12:13:22.235Z"
+    },
+    "1JVX4nwfQKuc_MADhqbHH8UM3R0DES4CY": {
+      "id": "1JVX4nwfQKuc_MADhqbHH8UM3R0DES4CY",
+      "name": "18. לבדיקה.mp3",
+      "createdTime": "2026-01-18T11:53:44.319Z"
+    },
+    "1ZWGNHbFfn8eP3GD0T4vKUOcN9cgzVbYe": {
+      "id": "1ZWGNHbFfn8eP3GD0T4vKUOcN9cgzVbYe",
+      "name": "17. ימניים ואיטרים.mp3",
+      "createdTime": "2026-01-18T11:52:02.757Z"
+    },
+    "1pzTIYdxDfszrdCXtcoGkIgF7nekKRdaq": {
+      "id": "1pzTIYdxDfszrdCXtcoGkIgF7nekKRdaq",
+      "name": "16. ספרצטורה.mp3",
+      "createdTime": "2026-01-18T11:50:30.713Z"
+    },
+    "1lfnEywhpYnL8gDchKKmykxMDdHasDZYh": {
+      "id": "1lfnEywhpYnL8gDchKKmykxMDdHasDZYh",
+      "name": "15. אולימפיאדה.mp3",
+      "createdTime": "2026-01-18T11:49:08.682Z"
+    },
+    "1uDAVKll_F78P8fLzZpUpuO3LIo-eIfBf": {
+      "id": "1uDAVKll_F78P8fLzZpUpuO3LIo-eIfBf",
+      "name": "14. ספרים.mp3",
+      "createdTime": "2026-01-18T11:47:23.580Z"
+    },
+    "1pQM4SHxKd1HpdAvNnyqIMOCTaPNgZP_Y": {
+      "id": "1pQM4SHxKd1HpdAvNnyqIMOCTaPNgZP_Y",
+      "name": "13. משחקי כדורגל.mp3",
+      "createdTime": "2026-01-18T11:45:40.774Z"
+    },
+    "1sCGTQGOkqP20N3J-Ho15qKimmlDpTu3J": {
+      "id": "1sCGTQGOkqP20N3J-Ho15qKimmlDpTu3J",
+      "name": "12. משחקים.mp3",
+      "createdTime": "2026-01-18T11:44:08.228Z"
+    },
+    "15QUiSdAuKmHeFr7M42n7-8VeB4BQv3X0": {
+      "id": "15QUiSdAuKmHeFr7M42n7-8VeB4BQv3X0",
+      "name": "11. משחקי וידיאו.mp3",
+      "createdTime": "2026-01-18T11:42:30.814Z"
+    },
+    "1Ee8D_Fd8Xg9M8XHeWFAcFL60FsB_dvlE": {
+      "id": "1Ee8D_Fd8Xg9M8XHeWFAcFL60FsB_dvlE",
+      "name": "10. יינות.mp3",
+      "createdTime": "2026-01-18T11:40:57.524Z"
+    },
+    "11pnk58QtyeosYBTm2oMMMG5BKv9HYSsv": {
+      "id": "11pnk58QtyeosYBTm2oMMMG5BKv9HYSsv",
+      "name": "09. רופאים לשעבר.mp3",
+      "createdTime": "2026-01-18T11:38:51.757Z"
+    },
+    "1Sjlf71_8lQ1vGOxcdQXUv8Dea7m_wcYJ": {
+      "id": "1Sjlf71_8lQ1vGOxcdQXUv8Dea7m_wcYJ",
+      "name": "08. שפה ואיך לרכוש אותה.mp3",
+      "createdTime": "2026-01-18T11:37:01.410Z"
+    },
+    "174y3Ozu0xNendA6B2yUsQVvpjlL4U4-p": {
+      "id": "174y3Ozu0xNendA6B2yUsQVvpjlL4U4-p",
+      "name": "07. מיתה משונה.mp3",
+      "createdTime": "2026-01-18T11:35:10.001Z"
+    },
+    "1sn0aocY5SGn8k42XndUURunT5a87rkoh": {
+      "id": "1sn0aocY5SGn8k42XndUURunT5a87rkoh",
+      "name": "06. אלכוהול (40% ומעלה).mp3",
+      "createdTime": "2026-01-18T11:33:29.287Z"
+    },
+    "1B1QYIue_PBbrueltg-Crf3lh4vTWM3i5": {
+      "id": "1B1QYIue_PBbrueltg-Crf3lh4vTWM3i5",
+      "name": "05. דמוקרטיה ובחירות.mp3",
+      "createdTime": "2026-01-18T11:31:36.606Z"
+    },
+    "15i5YLiiEbNl9Mleyvc51NGmsxLZMnFin": {
+      "id": "15i5YLiiEbNl9Mleyvc51NGmsxLZMnFin",
+      "name": "03. סיגריות קפה ומגפות.mp3",
+      "createdTime": "2026-01-18T11:28:01.786Z"
+    },
+    "1sAos3rpo9JueOU2eprJHQWLQyv9twb9P": {
+      "id": "1sAos3rpo9JueOU2eprJHQWLQyv9twb9P",
+      "name": "04. חיסונים.mp3",
+      "createdTime": "2026-01-18T11:29:53.896Z"
+    },
+    "1tzAyMNQRGWFGu8W_GECW2pzbGOex_X1j": {
+      "id": "1tzAyMNQRGWFGu8W_GECW2pzbGOex_X1j",
+      "name": "02. קולנוע.mp3",
+      "createdTime": "2026-01-18T11:26:18.636Z"
+    },
+    "1yT_10ymkv-GmthLYphszj20a7zEhb-ix": {
+      "id": "1yT_10ymkv-GmthLYphszj20a7zEhb-ix",
+      "name": "01. ההיסטוריה של השירותים.mp3",
+      "createdTime": "2026-01-18T11:24:27.059Z"
     },
     "1ttlwrqiFMpU4IT5eDBkeDtqYK9P4hnAu": {
       "id": "1ttlwrqiFMpU4IT5eDBkeDtqYK9P4hnAu",
@@ -55465,6 +56021,116 @@
       "id": "1JLlT4WpoHZ3H6nU3QdZ6uYMKUqvBsSkA",
       "name": "פרק 449 ההיסטוריה של אמצעי התשלום.mp3",
       "createdTime": "2025-09-25T18:04:10.547Z"
+    },
+    "1V-owLQCXX8S1MaNaA-FVu-wwdxI7wXE8": {
+      "id": "1V-owLQCXX8S1MaNaA-FVu-wwdxI7wXE8",
+      "name": "023. סוד הקסם עם אמנון הלל.mp3",
+      "createdTime": "2026-02-05T15:57:13.943Z"
+    },
+    "1oEfNjpnzR3VZkz1DNOTugLY_cAUBkj9H": {
+      "id": "1oEfNjpnzR3VZkz1DNOTugLY_cAUBkj9H",
+      "name": "022. ספיישל מיכאל-קאסט.mp3",
+      "createdTime": "2026-02-05T15:48:22.654Z"
+    },
+    "1LyZiouwRb8qE_NnJCqHMoCrKc3UwbuqI": {
+      "id": "1LyZiouwRb8qE_NnJCqHMoCrKc3UwbuqI",
+      "name": "021. ספיישל צחור-קאסט.mp3",
+      "createdTime": "2026-02-05T15:46:31.968Z"
+    },
+    "1kPHq57rCa8KpfpbQtxHnquV_QWLyu__-": {
+      "id": "1kPHq57rCa8KpfpbQtxHnquV_QWLyu__-",
+      "name": "020. ספיישל רוני-קאסט.mp3",
+      "createdTime": "2026-02-05T15:44:09.009Z"
+    },
+    "1q50C87slzwDQXGz0hlimGcLhIMqO4OMU": {
+      "id": "1q50C87slzwDQXGz0hlimGcLhIMqO4OMU",
+      "name": "019. שיקוי הפולימיצי (12).mp3",
+      "createdTime": "2026-02-05T15:41:45.304Z"
+    },
+    "1nntwFMF193m2HNESdECnl5eXX5g_hZ1B": {
+      "id": "1nntwFMF193m2HNESdECnl5eXX5g_hZ1B",
+      "name": "018. המרביצן הסורר ומועדון הדו-קרב (10-11).mp3",
+      "createdTime": "2026-02-05T15:36:41.457Z"
+    },
+    "1rGlkqF69h4kVZqZSUJXKbqBdy_Af0ZFT": {
+      "id": "1rGlkqF69h4kVZqZSUJXKbqBdy_Af0ZFT",
+      "name": "017. מסיבת יום-המוות והכתובת על הקיר (8-9).mp3",
+      "createdTime": "2026-02-05T15:28:19.527Z"
+    },
+    "1DvFHh-DlNaWudLvVdLyy-jBOBQpqvFq2": {
+      "id": "1DvFHh-DlNaWudLvVdLyy-jBOBQpqvFq2",
+      "name": "016. גילדרוי לוקהרט ובוצדמים וקולות מוזרים (6-7).mp3",
+      "createdTime": "2026-02-05T15:21:35.219Z"
+    },
+    "1ODcW1z-31Xdknjucb29v0DpIVpxqxYvC": {
+      "id": "1ODcW1z-31Xdknjucb29v0DpIVpxqxYvC",
+      "name": "014. המחילה ואצל כרך ודף בע''מ (3-4).mp3",
+      "createdTime": "2026-02-05T15:15:33.859Z"
+    },
+    "1IHpPlLn-T6TVSYo6t8gEybwmVRVLBiHv": {
+      "id": "1IHpPlLn-T6TVSYo6t8gEybwmVRVLBiHv",
+      "name": "013. יום-ההולדת הגרוע ביותר בעולם והאזהרה של דובי (1-2).mp3",
+      "createdTime": "2026-02-05T15:08:41.598Z"
+    },
+    "1UkYT1H8sWyzycgtXBt7pRkUFjw18KIsV": {
+      "id": "1UkYT1H8sWyzycgtXBt7pRkUFjw18KIsV",
+      "name": "012. הסרט הראשון.mp3",
+      "createdTime": "2026-01-29T20:26:53.913Z"
+    },
+    "10ObXp52qDGD_OTUXnuWXgxx73dL9vpDt": {
+      "id": "10ObXp52qDGD_OTUXnuWXgxx73dL9vpDt",
+      "name": "011. האיש בעל שני הפרצופים (17).mp3",
+      "createdTime": "2026-01-29T19:51:25.466Z"
+    },
+    "1tUzVsUxypA3J9Fsa2ylZhZ5XaXn9y4Uq": {
+      "id": "1tUzVsUxypA3J9Fsa2ylZhZ5XaXn9y4Uq",
+      "name": "010. דרך דלת הסתרים (16)(הקראה).mp3",
+      "createdTime": "2026-01-29T19:45:18.935Z"
+    },
+    "1Ommn2bPjgujdFsQBdVGL1JjnjWbFCT_-": {
+      "id": "1Ommn2bPjgujdFsQBdVGL1JjnjWbFCT_-",
+      "name": "009. אל היער האסור (15).mp3",
+      "createdTime": "2026-01-29T19:37:47.635Z"
+    },
+    "1KUnnaJuSQXmtZxJ8l19ORaiy_3vEUsKN": {
+      "id": "1KUnnaJuSQXmtZxJ8l19ORaiy_3vEUsKN",
+      "name": "008. ניקולס פלאמל ונורברט הנורווגי הנקוד (13-14).mp3",
+      "createdTime": "2026-01-29T19:33:52.604Z"
+    },
+    "1GUSpZb7-b3wejeoodLFsth8P3oPKX--C": {
+      "id": "1GUSpZb7-b3wejeoodLFsth8P3oPKX--C",
+      "name": "007. הראי של ינפתא (12).mp3",
+      "createdTime": "2026-01-29T19:28:04.738Z"
+    },
+    "1grSogFcZ0r3t1sKVUvzBjxYHefbjlrB7": {
+      "id": "1grSogFcZ0r3t1sKVUvzBjxYHefbjlrB7",
+      "name": "006. ליל כל הקדושים וקווידיץ' (10-11).mp3",
+      "createdTime": "2026-01-29T19:23:23.991Z"
+    },
+    "1e-BS448jxjwOrn9T6LjRRUK8HvZ7wGd3": {
+      "id": "1e-BS448jxjwOrn9T6LjRRUK8HvZ7wGd3",
+      "name": "005. המורה לשיקויים ודו-קרב בחצות (8-9).mp3",
+      "createdTime": "2026-01-29T19:17:27.593Z"
+    },
+    "10rKO9IKhsK4LYbYP7-gSJWvvSuk0qXON": {
+      "id": "10rKO9IKhsK4LYbYP7-gSJWvvSuk0qXON",
+      "name": "004. הנסיעה מרציף מספר תשע ושלושה רבעים ומצנפת המיון (6-7).mp3",
+      "createdTime": "2026-01-29T19:12:43.377Z"
+    },
+    "12mvhD5oma2U9XmhDSnnVXvCsVD4to6j5": {
+      "id": "12mvhD5oma2U9XmhDSnnVXvCsVD4to6j5",
+      "name": "003. שומר המפתחות וסימטת דיאגון (4-5).mp3",
+      "createdTime": "2026-01-29T19:07:28.712Z"
+    },
+    "1b9m0AIHFF1AznQaNny5gmKKTHvlB61EP": {
+      "id": "1b9m0AIHFF1AznQaNny5gmKKTHvlB61EP",
+      "name": "002. הזכוכית הנעלמת והמכתבים מאף אחד (2-3).mp3",
+      "createdTime": "2026-01-29T19:02:58.502Z"
+    },
+    "1mnc3IfdZUhH0rUfO6oOAUeHmPhw-7Mtg": {
+      "id": "1mnc3IfdZUhH0rUfO6oOAUeHmPhw-7Mtg",
+      "name": "001. הילד שנשאר בחיים (1).mp3",
+      "createdTime": "2026-01-29T18:58:48.949Z"
     },
     "1FScNT-Kr5oAGzyoCVONelmhmqYwqN_FQ": {
       "id": "1FScNT-Kr5oAGzyoCVONelmhmqYwqN_FQ",
