@@ -386,6 +386,7 @@
       "name": "היסטוריה",
       "subFolders": [
         "1rR3eV96M9PTySAMCqvc9I6wD6XNnWoGr",
+        "1f6XH_MbViJrEZ0BFvoh7o0qeonjGKIEB",
         "1AnD4ZovQ-PPvwsyT9doWt2bk0HdTAOKz",
         "1ygJ2XCm6heHrYQMDz5rWQxXK3IqMfP7T",
         "1hqpBwJN8Z0r1CPNmJ5wpYVjlVmY6fgkr",
@@ -453,6 +454,7 @@
         "14Q81_qNCT4YAVEW1GLNjiZyi6N1TV6Ji",
         "1RcNrTra7_D2vxuUvA0dii5NgVspgz3Oe",
         "1ZivBhw-jFtL8kioXaJWzx91I682wUbN_",
+        "1GzIBtu_DW5wqsuMElwvRnx9ttjwAi4VX",
         "10GdF9P10wLUlpuumm0TBltYg1bN6tDog",
         "1uvMy5B2JRXG0uFdKk8zg9WvTz5YRbvsl",
         "1gUsT5P31_hcFy6cC8VOh60XLBb2WHR0c",
@@ -7020,6 +7022,15 @@
       "processed": true,
       "subFoldersFetched": true
     },
+    "1f6XH_MbViJrEZ0BFvoh7o0qeonjGKIEB": {
+      "name": "זינוק לאתמול",
+      "subFolders": [],
+      "files": [
+        "1E_ytlbHppxh1TyVpoYp4cLld6bfrJvbO"
+      ],
+      "processed": true,
+      "subFoldersFetched": true
+    },
     "1AnD4ZovQ-PPvwsyT9doWt2bk0HdTAOKz": {
       "name": "היסטוריה נטו - מהתנ''ך ועד תש''ח",
       "subFolders": [],
@@ -8608,6 +8619,16 @@
         "1YLKT_E_kGXnTD4VsMPm9jojAqDJU40QB",
         "13DnbyOj9Ynef2h4Mq8JNDLtGfjA_3kY6",
         "1Sli1gtm5w_bydWV-ocKREE-s-oeneuuc"
+      ],
+      "processed": true,
+      "subFoldersFetched": true
+    },
+    "1GzIBtu_DW5wqsuMElwvRnx9ttjwAi4VX": {
+      "name": "התסריטאים",
+      "subFolders": [],
+      "files": [
+        "185s50rlGCBPRgL_BGu5eaguYphXGyl0V",
+        "1nVbe8JjaWLpnxWDtClW_N04R-YVBD8mB"
       ],
       "processed": true,
       "subFoldersFetched": true
@@ -43255,6 +43276,11 @@
       "name": "פרק 01 פיילוט - בגדד והאימפריה המוסלמית.mp3",
       "createdTime": "2025-11-23T17:49:22.873Z"
     },
+    "1E_ytlbHppxh1TyVpoYp4cLld6bfrJvbO": {
+      "id": "1E_ytlbHppxh1TyVpoYp4cLld6bfrJvbO",
+      "name": "120. היינו העתיד.mp3",
+      "createdTime": "2025-11-18T17:45:20.589Z"
+    },
     "1Lzx3DoDeQILfACUJrx6bBjm_ANgFhWq0": {
       "id": "1Lzx3DoDeQILfACUJrx6bBjm_ANgFhWq0",
       "name": "היסטוריה נטו פרק 21 סיכום.mp3",
@@ -49104,6 +49130,16 @@
       "id": "1Sli1gtm5w_bydWV-ocKREE-s-oeneuuc",
       "name": "פרק 00 טריילר.mp3",
       "createdTime": "2025-11-18T17:48:57.714Z"
+    },
+    "185s50rlGCBPRgL_BGu5eaguYphXGyl0V": {
+      "id": "185s50rlGCBPRgL_BGu5eaguYphXGyl0V",
+      "name": "005. אריק שגב.mp3",
+      "createdTime": "2025-11-18T17:51:56.883Z"
+    },
+    "1nVbe8JjaWLpnxWDtClW_N04R-YVBD8mB": {
+      "id": "1nVbe8JjaWLpnxWDtClW_N04R-YVBD8mB",
+      "name": "04. אלי תבור.mp3",
+      "createdTime": "2025-11-18T17:52:07.508Z"
     },
     "1t6BGlBxqI4xYU_9yZpl3tLjPoqZ-f3b4": {
       "id": "1t6BGlBxqI4xYU_9yZpl3tLjPoqZ-f3b4",
