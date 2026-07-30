@@ -72,7 +72,6 @@
     "1IRA2jW0bPSWpigvdNrXVMWCjGCNu4LNv": {
       "name": "תיקייה זמנית לפודקאסטים לא מסודרים וחסרים",
       "subFolders": [
-        "1SjTmRurzw_faPFECjwNz8IcBd5LD0m22",
         "1GSE40x24-p6XRLc65jOWummDATPiSHUC",
         "1YtkrKeWfcxa-W1RUsVs__xpCxjGGeLWc",
         "18xXEznwZXeRe9f4KD0ztnlmDEHY8Dl2M",
@@ -548,13 +547,6 @@
       "processed": true,
       "subFoldersFetched": true
     },
-    "1SjTmRurzw_faPFECjwNz8IcBd5LD0m22": {
-      "name": "נדב פרי פודקאסט",
-      "subFolders": [],
-      "files": [],
-      "processed": true,
-      "subFoldersFetched": true
-    },
     "1GSE40x24-p6XRLc65jOWummDATPiSHUC": {
       "name": "עושים חשבון",
       "subFolders": [],
@@ -997,7 +989,6 @@
         "1M4h8Pxq353-47jkW23K13JfpQ7ZoyJR8",
         "1AFhjvbN6S6IaqZlUSArHQZYFndLGcRkh",
         "1BosPgNiFSxxvAZqtoFAoZSdHOAMwvXxF",
-        "1vVbKiBm_W515_lwmU_PBKV9Uvfx6R2un",
         "1sYcEbrJdT7Bfx8BcRb2P2mqz7yKiyOPH",
         "1pSD8mIStxUP8rZfq__Ml92KNDXx2I5Tf",
         "1wqp-Szf_CP5HT-uPyRKnImkxhgO2xb7v",
@@ -10670,25 +10661,6 @@
         "1oYnbx0toi0pNsGcaohsGwDLevMDoqwOf",
         "1ql9dWRFSM1O4_nnGh5ufunK75KXRzBVI",
         "1rTEPCCBPqPotWhzM1qUgMcAjhYWsTQTC"
-      ],
-      "processed": true,
-      "subFoldersFetched": true
-    },
-    "1vVbKiBm_W515_lwmU_PBKV9Uvfx6R2un": {
-      "name": "תיקים ותחקירים",
-      "subFolders": [],
-      "files": [
-        "1_cOQIMm7hZ26iYUx6x2jd9lRkw8weRWi",
-        "1iSjE2hLzckpJLdzAT9OHIXGYJC_DNz-S",
-        "1E6SCAPCdJhCM4cd2Ckh1poTvzZviiHc2",
-        "1IM1jMVulb3RdSwQWXU80kuNC5ymnTwJO",
-        "1LtzbDb2TAH-5YGJAmDzfYg0x855i-2Bm",
-        "1UwhWnutDUC1tclJR6v0JDyPXEXMVqTJl",
-        "1ViF10acj4QR5iAVHGDllMEyGIY7t5NUo",
-        "1WHZQHvc0D5xXBe645G-ilWQ8qD3yYdRn",
-        "1ihyrHUABxXE8LoygvfkjY0a2mzbaFJDy",
-        "1wD10ZTR74A8W4sY5W_FzH233zylyiF7O",
-        "1xuYCxC30q3eA8pFhX9h0LC1_del5SAQY"
       ],
       "processed": true,
       "subFoldersFetched": true
@@ -56030,61 +56002,6 @@
       "id": "1rTEPCCBPqPotWhzM1qUgMcAjhYWsTQTC",
       "name": "עותק של Atid_kenes_24_Guy_Shalmon6ua10.mp3",
       "createdTime": "2025-11-15T23:45:45.296Z"
-    },
-    "1_cOQIMm7hZ26iYUx6x2jd9lRkw8weRWi": {
-      "id": "1_cOQIMm7hZ26iYUx6x2jd9lRkw8weRWi",
-      "name": "עותק של ece0240b-0cdd-bebf-6a1c-6c00be499344.mp3",
-      "createdTime": "2025-11-13T19:56:19.203Z"
-    },
-    "1iSjE2hLzckpJLdzAT9OHIXGYJC_DNz-S": {
-      "id": "1iSjE2hLzckpJLdzAT9OHIXGYJC_DNz-S",
-      "name": "עותק של f6f84db8-fea2-4c80-df86-235c07f9ac46.mp3",
-      "createdTime": "2025-11-13T19:56:19.203Z"
-    },
-    "1E6SCAPCdJhCM4cd2Ckh1poTvzZviiHc2": {
-      "id": "1E6SCAPCdJhCM4cd2Ckh1poTvzZviiHc2",
-      "name": "עותק של 9f41105e-bf8e-df72-b37d-2d337dd67277.mp3",
-      "createdTime": "2025-11-13T19:56:13.359Z"
-    },
-    "1IM1jMVulb3RdSwQWXU80kuNC5ymnTwJO": {
-      "id": "1IM1jMVulb3RdSwQWXU80kuNC5ymnTwJO",
-      "name": "עותק של 66fd990e-02bb-7693-35da-f1c74f5ce197.mp3",
-      "createdTime": "2025-11-13T19:56:13.359Z"
-    },
-    "1LtzbDb2TAH-5YGJAmDzfYg0x855i-2Bm": {
-      "id": "1LtzbDb2TAH-5YGJAmDzfYg0x855i-2Bm",
-      "name": "עותק של c0e10863-6d45-d376-60c7-8b054b471910.mp3",
-      "createdTime": "2025-11-13T19:56:13.359Z"
-    },
-    "1UwhWnutDUC1tclJR6v0JDyPXEXMVqTJl": {
-      "id": "1UwhWnutDUC1tclJR6v0JDyPXEXMVqTJl",
-      "name": "עותק של 458266fa-f7d2-818c-9ead-82297e3cf89d.mp3",
-      "createdTime": "2025-11-13T19:56:13.359Z"
-    },
-    "1ViF10acj4QR5iAVHGDllMEyGIY7t5NUo": {
-      "id": "1ViF10acj4QR5iAVHGDllMEyGIY7t5NUo",
-      "name": "עותק של 5443f986-5fa8-dfb1-22db-e1bff063f8e4.mp3",
-      "createdTime": "2025-11-13T19:56:13.359Z"
-    },
-    "1WHZQHvc0D5xXBe645G-ilWQ8qD3yYdRn": {
-      "id": "1WHZQHvc0D5xXBe645G-ilWQ8qD3yYdRn",
-      "name": "עותק של bc680fa8-3049-6023-9c57-1819c023c164.mp3",
-      "createdTime": "2025-11-13T19:56:13.359Z"
-    },
-    "1ihyrHUABxXE8LoygvfkjY0a2mzbaFJDy": {
-      "id": "1ihyrHUABxXE8LoygvfkjY0a2mzbaFJDy",
-      "name": "עותק של e4968c99-7f55-456a-f290-f2d11f8cb90a.mp3",
-      "createdTime": "2025-11-13T19:56:13.359Z"
-    },
-    "1wD10ZTR74A8W4sY5W_FzH233zylyiF7O": {
-      "id": "1wD10ZTR74A8W4sY5W_FzH233zylyiF7O",
-      "name": "עותק של 927d2900-82a5-2a98-f639-e8c5d5365689.mp3",
-      "createdTime": "2025-11-13T19:56:13.359Z"
-    },
-    "1xuYCxC30q3eA8pFhX9h0LC1_del5SAQY": {
-      "id": "1xuYCxC30q3eA8pFhX9h0LC1_del5SAQY",
-      "name": "עותק של 7d007723-5bc0-524f-a5e1-310986159d22.mp3",
-      "createdTime": "2025-11-13T19:56:13.359Z"
     },
     "1-DNn1dSeP_qT3qeSL73jfEFCtS1tu5lg": {
       "id": "1-DNn1dSeP_qT3qeSL73jfEFCtS1tu5lg",
