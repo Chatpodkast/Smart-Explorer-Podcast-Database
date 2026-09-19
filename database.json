@@ -13392,10 +13392,13 @@
     },
     "1yPEU2Rilt5rhEmZIoVQc4vTZKJUIPYt7": {
       "name": "פרק 3 | עם חיים כהן",
-      "subFolders": [],
+      "subFolders": [
+        "1Mrdl2jhYqdD_7Uz9MOVQYdj4fNVtPXDc",
+        "1srJNe7M3qJjJx1qhz3O8PMXcrpk85TKn"
+      ],
       "files": [],
-      "processed": false,
-      "subFoldersFetched": false
+      "processed": true,
+      "subFoldersFetched": true
     },
     "1ZmdRaTTtY7xGGnORUF3qphc4XBBi4tpc": {
       "name": "פרק 4 | עם אריה אטינגר",
@@ -16177,6 +16180,22 @@
       "files": [
         "1_nvjx7gUyVcpyojnNcSxjSS6S6_WaobF"
       ],
+      "processed": true,
+      "subFoldersFetched": true
+    },
+    "1Mrdl2jhYqdD_7Uz9MOVQYdj4fNVtPXDc": {
+      "name": "אודיו ",
+      "subFolders": [],
+      "files": [
+        "1itDzkYhznPgvrJ2Xyl-1fyTC-JgnEyqq"
+      ],
+      "processed": true,
+      "subFoldersFetched": true
+    },
+    "1srJNe7M3qJjJx1qhz3O8PMXcrpk85TKn": {
+      "name": "ווידיאו",
+      "subFolders": [],
+      "files": [],
       "processed": true,
       "subFoldersFetched": true
     },
@@ -64615,6 +64634,11 @@
       "id": "1_nvjx7gUyVcpyojnNcSxjSS6S6_WaobF",
       "name": "1.8.2. הורות _ משה אריה כהן עם משה שטרן _ עולם הרגשות בחינוך _ פרק 2.mp4",
       "createdTime": "2026-05-13T23:04:47.544Z"
+    },
+    "1itDzkYhznPgvrJ2Xyl-1fyTC-JgnEyqq": {
+      "id": "1itDzkYhznPgvrJ2Xyl-1fyTC-JgnEyqq",
+      "name": "2.12.3. הורות פרק 3 עם חיים כהן על בעיות קשב וריכוז.mp3",
+      "createdTime": "2026-05-13T23:04:44.548Z"
     },
     "1viNMlF0i7SkxJDbUx_ZhT9XnoKqouJgQ": {
       "id": "1viNMlF0i7SkxJDbUx_ZhT9XnoKqouJgQ",
