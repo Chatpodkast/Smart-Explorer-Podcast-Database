@@ -36,6 +36,7 @@
     "1HHXw6k59YPDXy9wDuIwZR9jls5JYUEAx": {
       "name": "העלאות חברי הקבוצה",
       "subFolders": [
+        "1XxRYIV-6voGjVox47NrXQ2Tq_eFH3_3b",
         "1GomWvcnLACv_HqWgEFipxf2BrPesUdz4"
       ],
       "files": [],
@@ -632,6 +633,16 @@
         "1c-Z7C5bVWmuM7vdNrQKknt-uCNYFy1xd"
       ],
       "files": [],
+      "processed": true,
+      "subFoldersFetched": true
+    },
+    "1XxRYIV-6voGjVox47NrXQ2Tq_eFH3_3b": {
+      "name": "צמד רעים",
+      "subFolders": [],
+      "files": [
+        "1dBdr6KImnB4MA4GB-iq8V-fR0_RRi6ht",
+        "1kgdExzAsyNbJ2AmJ1Ui3iHxEm73Sif12"
+      ],
       "processed": true,
       "subFoldersFetched": true
     },
@@ -31633,6 +31644,16 @@
       "id": "14b3lSHIr4TLxqNjelA12NiV_PsbnfLtw",
       "name": "מירי פורסט - ראיון גדול עם איש קטן - ניתאי יונה.mp3",
       "createdTime": "2025-10-23T17:27:31.490Z"
+    },
+    "1dBdr6KImnB4MA4GB-iq8V-fR0_RRi6ht": {
+      "id": "1dBdr6KImnB4MA4GB-iq8V-fR0_RRi6ht",
+      "name": "פרק 2 צמד רעים.mp4",
+      "createdTime": "2026-10-15T19:15:52.391Z"
+    },
+    "1kgdExzAsyNbJ2AmJ1Ui3iHxEm73Sif12": {
+      "id": "1kgdExzAsyNbJ2AmJ1Ui3iHxEm73Sif12",
+      "name": "צמד רעים 3.mp4",
+      "createdTime": "2026-10-15T19:17:22.639Z"
     },
     "1WpnwqmTmgam_P2mlZgLuBG2MVG1Ywp1z": {
       "id": "1WpnwqmTmgam_P2mlZgLuBG2MVG1Ywp1z",
