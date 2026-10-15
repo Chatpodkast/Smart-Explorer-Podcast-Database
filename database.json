@@ -35,7 +35,9 @@
     },
     "1HHXw6k59YPDXy9wDuIwZR9jls5JYUEAx": {
       "name": "העלאות חברי הקבוצה",
-      "subFolders": [],
+      "subFolders": [
+        "1GomWvcnLACv_HqWgEFipxf2BrPesUdz4"
+      ],
       "files": [],
       "processed": true,
       "subFoldersFetched": true
@@ -629,6 +631,13 @@
         "18qmH3om4omv4wgJjUalQ74qRrM2i_Qj2",
         "1c-Z7C5bVWmuM7vdNrQKknt-uCNYFy1xd"
       ],
+      "files": [],
+      "processed": true,
+      "subFoldersFetched": true
+    },
+    "1GomWvcnLACv_HqWgEFipxf2BrPesUdz4": {
+      "name": "חדרי אמונים",
+      "subFolders": [],
       "files": [],
       "processed": true,
       "subFoldersFetched": true
